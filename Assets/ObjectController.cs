@@ -49,7 +49,7 @@ public class ObjectController : MonoBehaviour {
         var dy  = this.y - pos.y;
         this.x  = pos.x;
         this.y  = pos.y;
-        Debug.Log(string.Format("x: {0}, y: {1}, dx: {2}, dy: {3}", x, y, dx, dy));
+        // Debug.Log(string.Format("x: {0}, y: {1}, dx: {2}, dy: {3}", x, y, dx, dy));
         return new Vector3(dx, dy, 0);
     }
 
