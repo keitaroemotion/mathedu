@@ -8,6 +8,7 @@ public class CylinderController : MonoBehaviour {
     private float DELTA_MINIMUM = 2;
     private float x;
     private float y;
+   
     private Vector3 pos;
 
     void Start () {
@@ -43,15 +44,20 @@ public class CylinderController : MonoBehaviour {
         }
     }
 
-    void Update () {
+    Vector3 GetDeltas(){
         pos     = Input.mousePosition;
         var dx  = this.x - pos.x;
         var dy  = this.y - pos.y;
         this.x  = pos.x;
         this.y  = pos.y;
         Debug.Log(string.Format("x: {0}, y: {1}, dx: {2}, dy: {3}", x, y, dx, dy));
+        return new Vector3(dx, dy, 0);
+    }
 
-        RotateX(dx);        
-        RotateY(dy);
+    void Update () {
+        var delta = GetDeltas();
+
+        RotateX(delta.x);        
+        RotateY(delta.y);
     }
 }
