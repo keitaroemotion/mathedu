@@ -15,23 +15,23 @@ public class CylinderController : MonoBehaviour {
     }
 
     void Start(){
-        this.delta       = 0;
-        this.objectIndex = 0;
+        delta       = 0;
+        objectIndex = 0;
     }
 
     void Update () {
-        this.delta += Time.deltaTime;
+        delta += Time.deltaTime;
         if(Input.GetKey(KeyCode.X) && delta > 0.25f){
-            this.objectIndex += 1;                            
+            objectIndex += 1;                            
 
-            if(this.objectIndex == objects.Count){
-                this.objectIndex = 0;
+            if(objectIndex == objects.Count){
+                objectIndex = 0;
             }
 
-            this.delta = 0;
+            delta = 0;
         }
 
-        Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", this.objectIndex, objects.Count, this.delta));
-        GetObjectController().Rotate(GameObject.Find(objects[this.objectIndex]));
+        Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", objectIndex, objects.Count, delta));
+        GetObjectController().Rotate(GameObject.Find(objects[objectIndex]));
     }
 }
