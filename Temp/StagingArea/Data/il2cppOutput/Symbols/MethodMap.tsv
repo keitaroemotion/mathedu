@@ -8830,8 +8830,9 @@ ValueProperty_get_target_m1728151320	UnityEngine.Analytics.TrackableField UnityE
 ValueProperty_IsValid_m3724034537	System.Boolean UnityEngine.Analytics.ValueProperty::IsValid()	UnityEngine.Analytics
 CylinderController__ctor_m831152459	System.Void CylinderController::.ctor()	Assembly-CSharp
 CylinderController_Start_m3646651091	System.Void CylinderController::Start()	Assembly-CSharp
-CylinderController_RotateX_m1112598035	System.Void CylinderController::RotateX()	Assembly-CSharp
-CylinderController_RotateY_m3841481390	System.Void CylinderController::RotateY()	Assembly-CSharp
+CylinderController_RotateX_m3071066189	System.Void CylinderController::RotateX(System.Single)	Assembly-CSharp
+CylinderController_RotateY_m2642358908	System.Void CylinderController::RotateY(System.Single)	Assembly-CSharp
+CylinderController_GetDeltas_m310444983	UnityEngine.Vector3 CylinderController::GetDeltas()	Assembly-CSharp
 CylinderController_Update_m533422403	System.Void CylinderController::Update()	Assembly-CSharp
 NULL	System.Int32 System.IComparable`1<System.Object>::CompareTo(T)	mscorlib
 NULL	System.Boolean System.IEquatable`1<System.Object>::Equals(T)	mscorlib

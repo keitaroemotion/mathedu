@@ -10270,35 +10270,35 @@ struct  Vector3_t3722313464
 {
 public:
 	// System.Single UnityEngine.Vector3::x
-	float ___x_0;
+	float ___x_2;
 	// System.Single UnityEngine.Vector3::y
-	float ___y_1;
+	float ___y_3;
 	// System.Single UnityEngine.Vector3::z
-	float ___z_2;
+	float ___z_4;
 
 public:
-	inline static int32_t get_offset_of_x_0() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___x_0)); }
-	inline float get_x_0() const { return ___x_0; }
-	inline float* get_address_of_x_0() { return &___x_0; }
-	inline void set_x_0(float value)
+	inline static int32_t get_offset_of_x_2() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___x_2)); }
+	inline float get_x_2() const { return ___x_2; }
+	inline float* get_address_of_x_2() { return &___x_2; }
+	inline void set_x_2(float value)
 	{
-		___x_0 = value;
+		___x_2 = value;
 	}
 
-	inline static int32_t get_offset_of_y_1() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___y_1)); }
-	inline float get_y_1() const { return ___y_1; }
-	inline float* get_address_of_y_1() { return &___y_1; }
-	inline void set_y_1(float value)
+	inline static int32_t get_offset_of_y_3() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___y_3)); }
+	inline float get_y_3() const { return ___y_3; }
+	inline float* get_address_of_y_3() { return &___y_3; }
+	inline void set_y_3(float value)
 	{
-		___y_1 = value;
+		___y_3 = value;
 	}
 
-	inline static int32_t get_offset_of_z_2() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___z_2)); }
-	inline float get_z_2() const { return ___z_2; }
-	inline float* get_address_of_z_2() { return &___z_2; }
-	inline void set_z_2(float value)
+	inline static int32_t get_offset_of_z_4() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___z_4)); }
+	inline float get_z_4() const { return ___z_4; }
+	inline float* get_address_of_z_4() { return &___z_4; }
+	inline void set_z_4(float value)
 	{
-		___z_2 = value;
+		___z_4 = value;
 	}
 };
 
@@ -10306,105 +10306,105 @@ struct Vector3_t3722313464_StaticFields
 {
 public:
 	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t3722313464  ___zeroVector_3;
+	Vector3_t3722313464  ___zeroVector_5;
 	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t3722313464  ___oneVector_4;
+	Vector3_t3722313464  ___oneVector_6;
 	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t3722313464  ___upVector_5;
+	Vector3_t3722313464  ___upVector_7;
 	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t3722313464  ___downVector_6;
+	Vector3_t3722313464  ___downVector_8;
 	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t3722313464  ___leftVector_7;
+	Vector3_t3722313464  ___leftVector_9;
 	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t3722313464  ___rightVector_8;
+	Vector3_t3722313464  ___rightVector_10;
 	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t3722313464  ___forwardVector_9;
+	Vector3_t3722313464  ___forwardVector_11;
 	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t3722313464  ___backVector_10;
+	Vector3_t3722313464  ___backVector_12;
 	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t3722313464  ___positiveInfinityVector_11;
+	Vector3_t3722313464  ___positiveInfinityVector_13;
 	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t3722313464  ___negativeInfinityVector_12;
+	Vector3_t3722313464  ___negativeInfinityVector_14;
 
 public:
-	inline static int32_t get_offset_of_zeroVector_3() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___zeroVector_3)); }
-	inline Vector3_t3722313464  get_zeroVector_3() const { return ___zeroVector_3; }
-	inline Vector3_t3722313464 * get_address_of_zeroVector_3() { return &___zeroVector_3; }
-	inline void set_zeroVector_3(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_zeroVector_5() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___zeroVector_5)); }
+	inline Vector3_t3722313464  get_zeroVector_5() const { return ___zeroVector_5; }
+	inline Vector3_t3722313464 * get_address_of_zeroVector_5() { return &___zeroVector_5; }
+	inline void set_zeroVector_5(Vector3_t3722313464  value)
 	{
-		___zeroVector_3 = value;
+		___zeroVector_5 = value;
 	}
 
-	inline static int32_t get_offset_of_oneVector_4() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___oneVector_4)); }
-	inline Vector3_t3722313464  get_oneVector_4() const { return ___oneVector_4; }
-	inline Vector3_t3722313464 * get_address_of_oneVector_4() { return &___oneVector_4; }
-	inline void set_oneVector_4(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_oneVector_6() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___oneVector_6)); }
+	inline Vector3_t3722313464  get_oneVector_6() const { return ___oneVector_6; }
+	inline Vector3_t3722313464 * get_address_of_oneVector_6() { return &___oneVector_6; }
+	inline void set_oneVector_6(Vector3_t3722313464  value)
 	{
-		___oneVector_4 = value;
+		___oneVector_6 = value;
 	}
 
-	inline static int32_t get_offset_of_upVector_5() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___upVector_5)); }
-	inline Vector3_t3722313464  get_upVector_5() const { return ___upVector_5; }
-	inline Vector3_t3722313464 * get_address_of_upVector_5() { return &___upVector_5; }
-	inline void set_upVector_5(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_upVector_7() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___upVector_7)); }
+	inline Vector3_t3722313464  get_upVector_7() const { return ___upVector_7; }
+	inline Vector3_t3722313464 * get_address_of_upVector_7() { return &___upVector_7; }
+	inline void set_upVector_7(Vector3_t3722313464  value)
 	{
-		___upVector_5 = value;
+		___upVector_7 = value;
 	}
 
-	inline static int32_t get_offset_of_downVector_6() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___downVector_6)); }
-	inline Vector3_t3722313464  get_downVector_6() const { return ___downVector_6; }
-	inline Vector3_t3722313464 * get_address_of_downVector_6() { return &___downVector_6; }
-	inline void set_downVector_6(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_downVector_8() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___downVector_8)); }
+	inline Vector3_t3722313464  get_downVector_8() const { return ___downVector_8; }
+	inline Vector3_t3722313464 * get_address_of_downVector_8() { return &___downVector_8; }
+	inline void set_downVector_8(Vector3_t3722313464  value)
 	{
-		___downVector_6 = value;
+		___downVector_8 = value;
 	}
 
-	inline static int32_t get_offset_of_leftVector_7() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___leftVector_7)); }
-	inline Vector3_t3722313464  get_leftVector_7() const { return ___leftVector_7; }
-	inline Vector3_t3722313464 * get_address_of_leftVector_7() { return &___leftVector_7; }
-	inline void set_leftVector_7(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_leftVector_9() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___leftVector_9)); }
+	inline Vector3_t3722313464  get_leftVector_9() const { return ___leftVector_9; }
+	inline Vector3_t3722313464 * get_address_of_leftVector_9() { return &___leftVector_9; }
+	inline void set_leftVector_9(Vector3_t3722313464  value)
 	{
-		___leftVector_7 = value;
+		___leftVector_9 = value;
 	}
 
-	inline static int32_t get_offset_of_rightVector_8() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___rightVector_8)); }
-	inline Vector3_t3722313464  get_rightVector_8() const { return ___rightVector_8; }
-	inline Vector3_t3722313464 * get_address_of_rightVector_8() { return &___rightVector_8; }
-	inline void set_rightVector_8(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_rightVector_10() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___rightVector_10)); }
+	inline Vector3_t3722313464  get_rightVector_10() const { return ___rightVector_10; }
+	inline Vector3_t3722313464 * get_address_of_rightVector_10() { return &___rightVector_10; }
+	inline void set_rightVector_10(Vector3_t3722313464  value)
 	{
-		___rightVector_8 = value;
+		___rightVector_10 = value;
 	}
 
-	inline static int32_t get_offset_of_forwardVector_9() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___forwardVector_9)); }
-	inline Vector3_t3722313464  get_forwardVector_9() const { return ___forwardVector_9; }
-	inline Vector3_t3722313464 * get_address_of_forwardVector_9() { return &___forwardVector_9; }
-	inline void set_forwardVector_9(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_forwardVector_11() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___forwardVector_11)); }
+	inline Vector3_t3722313464  get_forwardVector_11() const { return ___forwardVector_11; }
+	inline Vector3_t3722313464 * get_address_of_forwardVector_11() { return &___forwardVector_11; }
+	inline void set_forwardVector_11(Vector3_t3722313464  value)
 	{
-		___forwardVector_9 = value;
+		___forwardVector_11 = value;
 	}
 
-	inline static int32_t get_offset_of_backVector_10() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___backVector_10)); }
-	inline Vector3_t3722313464  get_backVector_10() const { return ___backVector_10; }
-	inline Vector3_t3722313464 * get_address_of_backVector_10() { return &___backVector_10; }
-	inline void set_backVector_10(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_backVector_12() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___backVector_12)); }
+	inline Vector3_t3722313464  get_backVector_12() const { return ___backVector_12; }
+	inline Vector3_t3722313464 * get_address_of_backVector_12() { return &___backVector_12; }
+	inline void set_backVector_12(Vector3_t3722313464  value)
 	{
-		___backVector_10 = value;
+		___backVector_12 = value;
 	}
 
-	inline static int32_t get_offset_of_positiveInfinityVector_11() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___positiveInfinityVector_11)); }
-	inline Vector3_t3722313464  get_positiveInfinityVector_11() const { return ___positiveInfinityVector_11; }
-	inline Vector3_t3722313464 * get_address_of_positiveInfinityVector_11() { return &___positiveInfinityVector_11; }
-	inline void set_positiveInfinityVector_11(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_positiveInfinityVector_13() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___positiveInfinityVector_13)); }
+	inline Vector3_t3722313464  get_positiveInfinityVector_13() const { return ___positiveInfinityVector_13; }
+	inline Vector3_t3722313464 * get_address_of_positiveInfinityVector_13() { return &___positiveInfinityVector_13; }
+	inline void set_positiveInfinityVector_13(Vector3_t3722313464  value)
 	{
-		___positiveInfinityVector_11 = value;
+		___positiveInfinityVector_13 = value;
 	}
 
-	inline static int32_t get_offset_of_negativeInfinityVector_12() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___negativeInfinityVector_12)); }
-	inline Vector3_t3722313464  get_negativeInfinityVector_12() const { return ___negativeInfinityVector_12; }
-	inline Vector3_t3722313464 * get_address_of_negativeInfinityVector_12() { return &___negativeInfinityVector_12; }
-	inline void set_negativeInfinityVector_12(Vector3_t3722313464  value)
+	inline static int32_t get_offset_of_negativeInfinityVector_14() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___negativeInfinityVector_14)); }
+	inline Vector3_t3722313464  get_negativeInfinityVector_14() const { return ___negativeInfinityVector_14; }
+	inline Vector3_t3722313464 * get_address_of_negativeInfinityVector_14() { return &___negativeInfinityVector_14; }
+	inline void set_negativeInfinityVector_14(Vector3_t3722313464  value)
 	{
-		___negativeInfinityVector_12 = value;
+		___negativeInfinityVector_14 = value;
 	}
 };
 
@@ -21307,19 +21307,19 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Display_RelativeMouseAt_m1648
 	{
 		V_1 = 0;
 		V_2 = 0;
-		float L_0 = (&___inputMouseCoordinates0)->get_x_0();
+		float L_0 = (&___inputMouseCoordinates0)->get_x_2();
 		V_3 = (((int32_t)((int32_t)L_0)));
-		float L_1 = (&___inputMouseCoordinates0)->get_y_1();
+		float L_1 = (&___inputMouseCoordinates0)->get_y_3();
 		V_4 = (((int32_t)((int32_t)L_1)));
 		int32_t L_2 = V_3;
 		int32_t L_3 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(Display_t1387065949_il2cpp_TypeInfo_var);
 		int32_t L_4 = Display_RelativeMouseAtImpl_m3843151955(NULL /*static, unused*/, L_2, L_3, (int32_t*)(&V_1), (int32_t*)(&V_2), /*hidden argument*/NULL);
-		(&V_0)->set_z_2((((float)((float)L_4))));
+		(&V_0)->set_z_4((((float)((float)L_4))));
 		int32_t L_5 = V_1;
-		(&V_0)->set_x_0((((float)((float)L_5))));
+		(&V_0)->set_x_2((((float)((float)L_5))));
 		int32_t L_6 = V_2;
-		(&V_0)->set_y_1((((float)((float)L_6))));
+		(&V_0)->set_y_3((((float)((float)L_6))));
 		Vector3_t3722313464  L_7 = V_0;
 		V_5 = L_7;
 		goto IL_0046;
@@ -26101,8 +26101,8 @@ extern "C" IL2CPP_METHOD_ATTR GUIElement_t3567083079 * GUILayer_HitTest_m5129284
 {
 	GUIElement_t3567083079 * V_0 = NULL;
 	{
-		float L_0 = (&___screenPosition0)->get_x_0();
-		float L_1 = (&___screenPosition0)->get_y_1();
+		float L_0 = (&___screenPosition0)->get_x_2();
+		float L_1 = (&___screenPosition0)->get_y_3();
 		Vector2_t2156229523  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		Vector2__ctor_m3970636864((&L_2), L_0, L_1, /*hidden argument*/NULL);
@@ -31662,7 +31662,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Rect_Contains_m1232228501 (Rect_t2360479859 *
 	bool V_0 = false;
 	int32_t G_B5_0 = 0;
 	{
-		float L_0 = (&___point0)->get_x_0();
+		float L_0 = (&___point0)->get_x_2();
 		float L_1 = Rect_get_xMin_m581135837((Rect_t2360479859 *)__this, /*hidden argument*/NULL);
 		if ((!(((float)L_0) >= ((float)L_1))))
 		{
@@ -31670,7 +31670,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Rect_Contains_m1232228501 (Rect_t2360479859 *
 		}
 	}
 	{
-		float L_2 = (&___point0)->get_x_0();
+		float L_2 = (&___point0)->get_x_2();
 		float L_3 = Rect_get_xMax_m3018144503((Rect_t2360479859 *)__this, /*hidden argument*/NULL);
 		if ((!(((float)L_2) < ((float)L_3))))
 		{
@@ -31678,7 +31678,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Rect_Contains_m1232228501 (Rect_t2360479859 *
 		}
 	}
 	{
-		float L_4 = (&___point0)->get_y_1();
+		float L_4 = (&___point0)->get_y_3();
 		float L_5 = Rect_get_yMin_m2601414109((Rect_t2360479859 *)__this, /*hidden argument*/NULL);
 		if ((!(((float)L_4) >= ((float)L_5))))
 		{
@@ -31686,7 +31686,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Rect_Contains_m1232228501 (Rect_t2360479859 *
 		}
 	}
 	{
-		float L_6 = (&___point0)->get_y_1();
+		float L_6 = (&___point0)->get_y_3();
 		float L_7 = Rect_get_yMax_m743455479((Rect_t2360479859 *)__this, /*hidden argument*/NULL);
 		G_B5_0 = ((((float)L_6) < ((float)L_7))? 1 : 0);
 		goto IL_0049;
@@ -33391,7 +33391,7 @@ IL_00b8:
 		}
 	}
 	{
-		float L_33 = (&V_8)->get_z_2();
+		float L_33 = (&V_8)->get_z_4();
 		V_9 = (((int32_t)((int32_t)L_33)));
 		int32_t L_34 = V_9;
 		int32_t L_35 = V_7;
@@ -33443,9 +33443,9 @@ IL_00f3:
 
 IL_013b:
 	{
-		float L_51 = (&V_8)->get_x_0();
+		float L_51 = (&V_8)->get_x_2();
 		float L_52 = V_10;
-		float L_53 = (&V_8)->get_y_1();
+		float L_53 = (&V_8)->get_y_3();
 		float L_54 = V_11;
 		Vector2__ctor_m3970636864((Vector2_t2156229523 *)(&V_12), ((float)((float)L_51/(float)L_52)), ((float)((float)L_53/(float)L_54)), /*hidden argument*/NULL);
 		float L_55 = (&V_12)->get_x_0();
@@ -33534,7 +33534,7 @@ IL_01eb:
 		V_14 = L_71;
 		Vector3_t3722313464  L_72 = Ray_get_direction_m761601601((Ray_t3785851493 *)(&V_14), /*hidden argument*/NULL);
 		V_16 = L_72;
-		float L_73 = (&V_16)->get_z_2();
+		float L_73 = (&V_16)->get_z_4();
 		V_15 = L_73;
 		float L_74 = V_15;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
@@ -35964,9 +35964,9 @@ extern "C" IL2CPP_METHOD_ATTR void Transform_Rotate_m1886816857 (Transform_t3600
 	Quaternion_t2301928331  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = (&___eulers0)->get_x_0();
-		float L_1 = (&___eulers0)->get_y_1();
-		float L_2 = (&___eulers0)->get_z_2();
+		float L_0 = (&___eulers0)->get_x_2();
+		float L_1 = (&___eulers0)->get_y_3();
+		float L_2 = (&___eulers0)->get_z_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
 		Quaternion_t2301928331  L_3 = Quaternion_Euler_m3049309462(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
 		V_0 = L_3;
@@ -36902,8 +36902,8 @@ extern "C" IL2CPP_METHOD_ATTR Vector2_t2156229523  Vector2_op_Implicit_m42601928
 	Vector2_t2156229523  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = (&___v0)->get_x_0();
-		float L_1 = (&___v0)->get_y_1();
+		float L_0 = (&___v0)->get_x_2();
+		float L_1 = (&___v0)->get_y_3();
 		Vector2_t2156229523  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		Vector2__ctor_m3970636864((&L_2), L_0, L_1, /*hidden argument*/NULL);
@@ -36975,11 +36975,11 @@ extern "C" IL2CPP_METHOD_ATTR void Vector3__ctor_m3353183577 (Vector3_t372231346
 {
 	{
 		float L_0 = ___x0;
-		__this->set_x_0(L_0);
+		__this->set_x_2(L_0);
 		float L_1 = ___y1;
-		__this->set_y_1(L_1);
+		__this->set_y_3(L_1);
 		float L_2 = ___z2;
-		__this->set_z_2(L_2);
+		__this->set_z_4(L_2);
 		return;
 	}
 }
@@ -36993,11 +36993,11 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Vector3_GetHashCode_m2879461828 (Vector3_t
 {
 	int32_t V_0 = 0;
 	{
-		float* L_0 = __this->get_address_of_x_0();
+		float* L_0 = __this->get_address_of_x_2();
 		int32_t L_1 = Single_GetHashCode_m1558506138((float*)L_0, /*hidden argument*/NULL);
-		float* L_2 = __this->get_address_of_y_1();
+		float* L_2 = __this->get_address_of_y_3();
 		int32_t L_3 = Single_GetHashCode_m1558506138((float*)L_2, /*hidden argument*/NULL);
-		float* L_4 = __this->get_address_of_z_2();
+		float* L_4 = __this->get_address_of_z_4();
 		int32_t L_5 = Single_GetHashCode_m1558506138((float*)L_4, /*hidden argument*/NULL);
 		V_0 = ((int32_t)((int32_t)((int32_t)((int32_t)L_1^(int32_t)((int32_t)((int32_t)L_3<<(int32_t)2))))^(int32_t)((int32_t)((int32_t)L_5>>(int32_t)2))));
 		goto IL_0040;
@@ -37061,8 +37061,8 @@ extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m906392898 (Vector3_t372231346
 	bool V_0 = false;
 	int32_t G_B4_0 = 0;
 	{
-		float* L_0 = __this->get_address_of_x_0();
-		float L_1 = (&___other0)->get_x_0();
+		float* L_0 = __this->get_address_of_x_2();
+		float L_1 = (&___other0)->get_x_2();
 		bool L_2 = Single_Equals_m1601893879((float*)L_0, L_1, /*hidden argument*/NULL);
 		if (!L_2)
 		{
@@ -37070,8 +37070,8 @@ extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m906392898 (Vector3_t372231346
 		}
 	}
 	{
-		float* L_3 = __this->get_address_of_y_1();
-		float L_4 = (&___other0)->get_y_1();
+		float* L_3 = __this->get_address_of_y_3();
+		float L_4 = (&___other0)->get_y_3();
 		bool L_5 = Single_Equals_m1601893879((float*)L_3, L_4, /*hidden argument*/NULL);
 		if (!L_5)
 		{
@@ -37079,8 +37079,8 @@ extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m906392898 (Vector3_t372231346
 		}
 	}
 	{
-		float* L_6 = __this->get_address_of_z_2();
-		float L_7 = (&___other0)->get_z_2();
+		float* L_6 = __this->get_address_of_z_4();
+		float L_7 = (&___other0)->get_z_4();
 		bool L_8 = Single_Equals_m1601893879((float*)L_6, L_7, /*hidden argument*/NULL);
 		G_B4_0 = ((int32_t)(L_8));
 		goto IL_0044;
@@ -37194,12 +37194,12 @@ extern "C" IL2CPP_METHOD_ATTR float Vector3_Magnitude_m3447562852 (RuntimeObject
 	}
 	float V_0 = 0.0f;
 	{
-		float L_0 = (&___vector0)->get_x_0();
-		float L_1 = (&___vector0)->get_x_0();
-		float L_2 = (&___vector0)->get_y_1();
-		float L_3 = (&___vector0)->get_y_1();
-		float L_4 = (&___vector0)->get_z_2();
-		float L_5 = (&___vector0)->get_z_2();
+		float L_0 = (&___vector0)->get_x_2();
+		float L_1 = (&___vector0)->get_x_2();
+		float L_2 = (&___vector0)->get_y_3();
+		float L_3 = (&___vector0)->get_y_3();
+		float L_4 = (&___vector0)->get_z_4();
+		float L_5 = (&___vector0)->get_z_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
 		float L_6 = sqrtf(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_0, (float)L_1)), (float)((float)il2cpp_codegen_multiply((float)L_2, (float)L_3)))), (float)((float)il2cpp_codegen_multiply((float)L_4, (float)L_5)))));
 		V_0 = L_6;
@@ -37223,12 +37223,12 @@ extern "C" IL2CPP_METHOD_ATTR float Vector3_get_magnitude_m27958459 (Vector3_t37
 	}
 	float V_0 = 0.0f;
 	{
-		float L_0 = __this->get_x_0();
-		float L_1 = __this->get_x_0();
-		float L_2 = __this->get_y_1();
-		float L_3 = __this->get_y_1();
-		float L_4 = __this->get_z_2();
-		float L_5 = __this->get_z_2();
+		float L_0 = __this->get_x_2();
+		float L_1 = __this->get_x_2();
+		float L_2 = __this->get_y_3();
+		float L_3 = __this->get_y_3();
+		float L_4 = __this->get_z_4();
+		float L_5 = __this->get_z_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
 		float L_6 = sqrtf(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_0, (float)L_1)), (float)((float)il2cpp_codegen_multiply((float)L_2, (float)L_3)))), (float)((float)il2cpp_codegen_multiply((float)L_4, (float)L_5)))));
 		V_0 = L_6;
@@ -37251,12 +37251,12 @@ extern "C" IL2CPP_METHOD_ATTR float Vector3_SqrMagnitude_m3025115945 (RuntimeObj
 {
 	float V_0 = 0.0f;
 	{
-		float L_0 = (&___vector0)->get_x_0();
-		float L_1 = (&___vector0)->get_x_0();
-		float L_2 = (&___vector0)->get_y_1();
-		float L_3 = (&___vector0)->get_y_1();
-		float L_4 = (&___vector0)->get_z_2();
-		float L_5 = (&___vector0)->get_z_2();
+		float L_0 = (&___vector0)->get_x_2();
+		float L_1 = (&___vector0)->get_x_2();
+		float L_2 = (&___vector0)->get_y_3();
+		float L_3 = (&___vector0)->get_y_3();
+		float L_4 = (&___vector0)->get_z_4();
+		float L_5 = (&___vector0)->get_z_4();
 		V_0 = ((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_0, (float)L_1)), (float)((float)il2cpp_codegen_multiply((float)L_2, (float)L_3)))), (float)((float)il2cpp_codegen_multiply((float)L_4, (float)L_5))));
 		goto IL_0036;
 	}
@@ -37280,7 +37280,7 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_get_zero_m1409827619 
 	memset(&V_0, 0, sizeof(V_0));
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
-		Vector3_t3722313464  L_0 = ((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->get_zeroVector_3();
+		Vector3_t3722313464  L_0 = ((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->get_zeroVector_5();
 		V_0 = L_0;
 		goto IL_000c;
 	}
@@ -37297,12 +37297,12 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_op_Subtraction_m30736
 	Vector3_t3722313464  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = (&___a0)->get_x_0();
-		float L_1 = (&___b1)->get_x_0();
-		float L_2 = (&___a0)->get_y_1();
-		float L_3 = (&___b1)->get_y_1();
-		float L_4 = (&___a0)->get_z_2();
-		float L_5 = (&___b1)->get_z_2();
+		float L_0 = (&___a0)->get_x_2();
+		float L_1 = (&___b1)->get_x_2();
+		float L_2 = (&___a0)->get_y_3();
+		float L_3 = (&___b1)->get_y_3();
+		float L_4 = (&___a0)->get_z_4();
+		float L_5 = (&___b1)->get_z_4();
 		Vector3_t3722313464  L_6;
 		memset(&L_6, 0, sizeof(L_6));
 		Vector3__ctor_m3353183577((&L_6), ((float)il2cpp_codegen_subtract((float)L_0, (float)L_1)), ((float)il2cpp_codegen_subtract((float)L_2, (float)L_3)), ((float)il2cpp_codegen_subtract((float)L_4, (float)L_5)), /*hidden argument*/NULL);
@@ -37322,11 +37322,11 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_op_Multiply_m33767739
 	Vector3_t3722313464  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = (&___a0)->get_x_0();
+		float L_0 = (&___a0)->get_x_2();
 		float L_1 = ___d1;
-		float L_2 = (&___a0)->get_y_1();
+		float L_2 = (&___a0)->get_y_3();
 		float L_3 = ___d1;
-		float L_4 = (&___a0)->get_z_2();
+		float L_4 = (&___a0)->get_z_4();
 		float L_5 = ___d1;
 		Vector3_t3722313464  L_6;
 		memset(&L_6, 0, sizeof(L_6));
@@ -37347,11 +37347,11 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_op_Division_m51081559
 	Vector3_t3722313464  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	{
-		float L_0 = (&___a0)->get_x_0();
+		float L_0 = (&___a0)->get_x_2();
 		float L_1 = ___d1;
-		float L_2 = (&___a0)->get_y_1();
+		float L_2 = (&___a0)->get_y_3();
 		float L_3 = ___d1;
-		float L_4 = (&___a0)->get_z_2();
+		float L_4 = (&___a0)->get_z_4();
 		float L_5 = ___d1;
 		Vector3_t3722313464  L_6;
 		memset(&L_6, 0, sizeof(L_6));
@@ -37430,19 +37430,19 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Vector3_ToString_m759076600 (Vector3_t37
 	{
 		ObjectU5BU5D_t2843939325* L_0 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)3);
 		ObjectU5BU5D_t2843939325* L_1 = L_0;
-		float L_2 = __this->get_x_0();
+		float L_2 = __this->get_x_2();
 		float L_3 = L_2;
 		RuntimeObject * L_4 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_3);
 		ArrayElementTypeCheck (L_1, L_4);
 		(L_1)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_4);
 		ObjectU5BU5D_t2843939325* L_5 = L_1;
-		float L_6 = __this->get_y_1();
+		float L_6 = __this->get_y_3();
 		float L_7 = L_6;
 		RuntimeObject * L_8 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_7);
 		ArrayElementTypeCheck (L_5, L_8);
 		(L_5)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_8);
 		ObjectU5BU5D_t2843939325* L_9 = L_5;
-		float L_10 = __this->get_z_2();
+		float L_10 = __this->get_z_4();
 		float L_11 = L_10;
 		RuntimeObject * L_12 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_11);
 		ArrayElementTypeCheck (L_9, L_12);
@@ -37476,43 +37476,43 @@ extern "C" IL2CPP_METHOD_ATTR void Vector3__cctor_m2599650684 (RuntimeObject * _
 		Vector3_t3722313464  L_0;
 		memset(&L_0, 0, sizeof(L_0));
 		Vector3__ctor_m3353183577((&L_0), (0.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_zeroVector_3(L_0);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_zeroVector_5(L_0);
 		Vector3_t3722313464  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		Vector3__ctor_m3353183577((&L_1), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_oneVector_4(L_1);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_oneVector_6(L_1);
 		Vector3_t3722313464  L_2;
 		memset(&L_2, 0, sizeof(L_2));
 		Vector3__ctor_m3353183577((&L_2), (0.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_upVector_5(L_2);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_upVector_7(L_2);
 		Vector3_t3722313464  L_3;
 		memset(&L_3, 0, sizeof(L_3));
 		Vector3__ctor_m3353183577((&L_3), (0.0f), (-1.0f), (0.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_downVector_6(L_3);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_downVector_8(L_3);
 		Vector3_t3722313464  L_4;
 		memset(&L_4, 0, sizeof(L_4));
 		Vector3__ctor_m3353183577((&L_4), (-1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_leftVector_7(L_4);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_leftVector_9(L_4);
 		Vector3_t3722313464  L_5;
 		memset(&L_5, 0, sizeof(L_5));
 		Vector3__ctor_m3353183577((&L_5), (1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_rightVector_8(L_5);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_rightVector_10(L_5);
 		Vector3_t3722313464  L_6;
 		memset(&L_6, 0, sizeof(L_6));
 		Vector3__ctor_m3353183577((&L_6), (0.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_forwardVector_9(L_6);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_forwardVector_11(L_6);
 		Vector3_t3722313464  L_7;
 		memset(&L_7, 0, sizeof(L_7));
 		Vector3__ctor_m3353183577((&L_7), (0.0f), (0.0f), (-1.0f), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_backVector_10(L_7);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_backVector_12(L_7);
 		Vector3_t3722313464  L_8;
 		memset(&L_8, 0, sizeof(L_8));
 		Vector3__ctor_m3353183577((&L_8), (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_positiveInfinityVector_11(L_8);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_positiveInfinityVector_13(L_8);
 		Vector3_t3722313464  L_9;
 		memset(&L_9, 0, sizeof(L_9));
 		Vector3__ctor_m3353183577((&L_9), (-std::numeric_limits<float>::infinity()), (-std::numeric_limits<float>::infinity()), (-std::numeric_limits<float>::infinity()), /*hidden argument*/NULL);
-		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_negativeInfinityVector_12(L_9);
+		((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->set_negativeInfinityVector_14(L_9);
 		return;
 	}
 }

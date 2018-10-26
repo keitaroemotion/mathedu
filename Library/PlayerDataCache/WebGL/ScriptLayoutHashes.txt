@@ -1,6 +1,6 @@
 WebGL
 PlayerPath?
-/Users/keikun/game/math/mathsample
+/Users/keikun/game/math/mathsample2
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?

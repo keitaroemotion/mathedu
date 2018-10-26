@@ -24,6 +24,8 @@
 struct CylinderController_t4250206988;
 // System.Char[]
 struct CharU5BU5D_t3528271667;
+// System.Object[]
+struct ObjectU5BU5D_t2843939325;
 // System.String
 struct String_t;
 // System.Void
@@ -35,10 +37,18 @@ struct MonoBehaviour_t3962482529;
 // UnityEngine.Transform
 struct Transform_t3600365921;
 
+extern RuntimeClass* Debug_t3317548046_il2cpp_TypeInfo_var;
 extern RuntimeClass* Input_t1431474628_il2cpp_TypeInfo_var;
-extern const uint32_t CylinderController_RotateX_m1112598035_MetadataUsageId;
-extern const uint32_t CylinderController_RotateY_m3841481390_MetadataUsageId;
+extern RuntimeClass* ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var;
+extern RuntimeClass* Single_t1397266774_il2cpp_TypeInfo_var;
+extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
+extern String_t* _stringLiteral2175761519;
+extern const uint32_t CylinderController_GetDeltas_m310444983_MetadataUsageId;
+extern const uint32_t CylinderController_RotateX_m3071066189_MetadataUsageId;
+extern const uint32_t CylinderController_RotateY_m2642358908_MetadataUsageId;
+extern const uint32_t CylinderController_Start_m3646651091_MetadataUsageId;
 
+struct ObjectU5BU5D_t2843939325;
 
 
 #ifndef U3CMODULEU3E_T692745538_H
@@ -90,6 +100,73 @@ struct Il2CppArrayBounds;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEARRAY_H
+#ifndef STRING_T_H
+#define STRING_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.String
+struct  String_t  : public RuntimeObject
+{
+public:
+	// System.Int32 System.String::length
+	int32_t ___length_0;
+	// System.Char System.String::start_char
+	Il2CppChar ___start_char_1;
+
+public:
+	inline static int32_t get_offset_of_length_0() { return static_cast<int32_t>(offsetof(String_t, ___length_0)); }
+	inline int32_t get_length_0() const { return ___length_0; }
+	inline int32_t* get_address_of_length_0() { return &___length_0; }
+	inline void set_length_0(int32_t value)
+	{
+		___length_0 = value;
+	}
+
+	inline static int32_t get_offset_of_start_char_1() { return static_cast<int32_t>(offsetof(String_t, ___start_char_1)); }
+	inline Il2CppChar get_start_char_1() const { return ___start_char_1; }
+	inline Il2CppChar* get_address_of_start_char_1() { return &___start_char_1; }
+	inline void set_start_char_1(Il2CppChar value)
+	{
+		___start_char_1 = value;
+	}
+};
+
+struct String_t_StaticFields
+{
+public:
+	// System.String System.String::Empty
+	String_t* ___Empty_2;
+	// System.Char[] System.String::WhiteChars
+	CharU5BU5D_t3528271667* ___WhiteChars_3;
+
+public:
+	inline static int32_t get_offset_of_Empty_2() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___Empty_2)); }
+	inline String_t* get_Empty_2() const { return ___Empty_2; }
+	inline String_t** get_address_of_Empty_2() { return &___Empty_2; }
+	inline void set_Empty_2(String_t* value)
+	{
+		___Empty_2 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_2), value);
+	}
+
+	inline static int32_t get_offset_of_WhiteChars_3() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___WhiteChars_3)); }
+	inline CharU5BU5D_t3528271667* get_WhiteChars_3() const { return ___WhiteChars_3; }
+	inline CharU5BU5D_t3528271667** get_address_of_WhiteChars_3() { return &___WhiteChars_3; }
+	inline void set_WhiteChars_3(CharU5BU5D_t3528271667* value)
+	{
+		___WhiteChars_3 = value;
+		Il2CppCodeGenWriteBarrier((&___WhiteChars_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STRING_T_H
 #ifndef VALUETYPE_T3640485471_H
 #define VALUETYPE_T3640485471_H
 #ifdef __clang__
@@ -314,6 +391,161 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VOID_T1185182177_H
+#ifndef VECTOR3_T3722313464_H
+#define VECTOR3_T3722313464_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Vector3
+struct  Vector3_t3722313464 
+{
+public:
+	// System.Single UnityEngine.Vector3::x
+	float ___x_2;
+	// System.Single UnityEngine.Vector3::y
+	float ___y_3;
+	// System.Single UnityEngine.Vector3::z
+	float ___z_4;
+
+public:
+	inline static int32_t get_offset_of_x_2() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___x_2)); }
+	inline float get_x_2() const { return ___x_2; }
+	inline float* get_address_of_x_2() { return &___x_2; }
+	inline void set_x_2(float value)
+	{
+		___x_2 = value;
+	}
+
+	inline static int32_t get_offset_of_y_3() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___y_3)); }
+	inline float get_y_3() const { return ___y_3; }
+	inline float* get_address_of_y_3() { return &___y_3; }
+	inline void set_y_3(float value)
+	{
+		___y_3 = value;
+	}
+
+	inline static int32_t get_offset_of_z_4() { return static_cast<int32_t>(offsetof(Vector3_t3722313464, ___z_4)); }
+	inline float get_z_4() const { return ___z_4; }
+	inline float* get_address_of_z_4() { return &___z_4; }
+	inline void set_z_4(float value)
+	{
+		___z_4 = value;
+	}
+};
+
+struct Vector3_t3722313464_StaticFields
+{
+public:
+	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
+	Vector3_t3722313464  ___zeroVector_5;
+	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
+	Vector3_t3722313464  ___oneVector_6;
+	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
+	Vector3_t3722313464  ___upVector_7;
+	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
+	Vector3_t3722313464  ___downVector_8;
+	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
+	Vector3_t3722313464  ___leftVector_9;
+	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
+	Vector3_t3722313464  ___rightVector_10;
+	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
+	Vector3_t3722313464  ___forwardVector_11;
+	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
+	Vector3_t3722313464  ___backVector_12;
+	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
+	Vector3_t3722313464  ___positiveInfinityVector_13;
+	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
+	Vector3_t3722313464  ___negativeInfinityVector_14;
+
+public:
+	inline static int32_t get_offset_of_zeroVector_5() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___zeroVector_5)); }
+	inline Vector3_t3722313464  get_zeroVector_5() const { return ___zeroVector_5; }
+	inline Vector3_t3722313464 * get_address_of_zeroVector_5() { return &___zeroVector_5; }
+	inline void set_zeroVector_5(Vector3_t3722313464  value)
+	{
+		___zeroVector_5 = value;
+	}
+
+	inline static int32_t get_offset_of_oneVector_6() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___oneVector_6)); }
+	inline Vector3_t3722313464  get_oneVector_6() const { return ___oneVector_6; }
+	inline Vector3_t3722313464 * get_address_of_oneVector_6() { return &___oneVector_6; }
+	inline void set_oneVector_6(Vector3_t3722313464  value)
+	{
+		___oneVector_6 = value;
+	}
+
+	inline static int32_t get_offset_of_upVector_7() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___upVector_7)); }
+	inline Vector3_t3722313464  get_upVector_7() const { return ___upVector_7; }
+	inline Vector3_t3722313464 * get_address_of_upVector_7() { return &___upVector_7; }
+	inline void set_upVector_7(Vector3_t3722313464  value)
+	{
+		___upVector_7 = value;
+	}
+
+	inline static int32_t get_offset_of_downVector_8() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___downVector_8)); }
+	inline Vector3_t3722313464  get_downVector_8() const { return ___downVector_8; }
+	inline Vector3_t3722313464 * get_address_of_downVector_8() { return &___downVector_8; }
+	inline void set_downVector_8(Vector3_t3722313464  value)
+	{
+		___downVector_8 = value;
+	}
+
+	inline static int32_t get_offset_of_leftVector_9() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___leftVector_9)); }
+	inline Vector3_t3722313464  get_leftVector_9() const { return ___leftVector_9; }
+	inline Vector3_t3722313464 * get_address_of_leftVector_9() { return &___leftVector_9; }
+	inline void set_leftVector_9(Vector3_t3722313464  value)
+	{
+		___leftVector_9 = value;
+	}
+
+	inline static int32_t get_offset_of_rightVector_10() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___rightVector_10)); }
+	inline Vector3_t3722313464  get_rightVector_10() const { return ___rightVector_10; }
+	inline Vector3_t3722313464 * get_address_of_rightVector_10() { return &___rightVector_10; }
+	inline void set_rightVector_10(Vector3_t3722313464  value)
+	{
+		___rightVector_10 = value;
+	}
+
+	inline static int32_t get_offset_of_forwardVector_11() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___forwardVector_11)); }
+	inline Vector3_t3722313464  get_forwardVector_11() const { return ___forwardVector_11; }
+	inline Vector3_t3722313464 * get_address_of_forwardVector_11() { return &___forwardVector_11; }
+	inline void set_forwardVector_11(Vector3_t3722313464  value)
+	{
+		___forwardVector_11 = value;
+	}
+
+	inline static int32_t get_offset_of_backVector_12() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___backVector_12)); }
+	inline Vector3_t3722313464  get_backVector_12() const { return ___backVector_12; }
+	inline Vector3_t3722313464 * get_address_of_backVector_12() { return &___backVector_12; }
+	inline void set_backVector_12(Vector3_t3722313464  value)
+	{
+		___backVector_12 = value;
+	}
+
+	inline static int32_t get_offset_of_positiveInfinityVector_13() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___positiveInfinityVector_13)); }
+	inline Vector3_t3722313464  get_positiveInfinityVector_13() const { return ___positiveInfinityVector_13; }
+	inline Vector3_t3722313464 * get_address_of_positiveInfinityVector_13() { return &___positiveInfinityVector_13; }
+	inline void set_positiveInfinityVector_13(Vector3_t3722313464  value)
+	{
+		___positiveInfinityVector_13 = value;
+	}
+
+	inline static int32_t get_offset_of_negativeInfinityVector_14() { return static_cast<int32_t>(offsetof(Vector3_t3722313464_StaticFields, ___negativeInfinityVector_14)); }
+	inline Vector3_t3722313464  get_negativeInfinityVector_14() const { return ___negativeInfinityVector_14; }
+	inline Vector3_t3722313464 * get_address_of_negativeInfinityVector_14() { return &___negativeInfinityVector_14; }
+	inline void set_negativeInfinityVector_14(Vector3_t3722313464  value)
+	{
+		___negativeInfinityVector_14 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VECTOR3_T3722313464_H
 #ifndef KEYCODE_T2599294277_H
 #define KEYCODE_T2599294277_H
 #ifdef __clang__
@@ -499,29 +731,115 @@ public:
 struct  CylinderController_t4250206988  : public MonoBehaviour_t3962482529
 {
 public:
+	// System.Single CylinderController::DELTA_MINIMUM
+	float ___DELTA_MINIMUM_4;
+	// System.Single CylinderController::x
+	float ___x_5;
+	// System.Single CylinderController::y
+	float ___y_6;
+	// UnityEngine.Vector3 CylinderController::pos
+	Vector3_t3722313464  ___pos_7;
 
 public:
+	inline static int32_t get_offset_of_DELTA_MINIMUM_4() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___DELTA_MINIMUM_4)); }
+	inline float get_DELTA_MINIMUM_4() const { return ___DELTA_MINIMUM_4; }
+	inline float* get_address_of_DELTA_MINIMUM_4() { return &___DELTA_MINIMUM_4; }
+	inline void set_DELTA_MINIMUM_4(float value)
+	{
+		___DELTA_MINIMUM_4 = value;
+	}
+
+	inline static int32_t get_offset_of_x_5() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___x_5)); }
+	inline float get_x_5() const { return ___x_5; }
+	inline float* get_address_of_x_5() { return &___x_5; }
+	inline void set_x_5(float value)
+	{
+		___x_5 = value;
+	}
+
+	inline static int32_t get_offset_of_y_6() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___y_6)); }
+	inline float get_y_6() const { return ___y_6; }
+	inline float* get_address_of_y_6() { return &___y_6; }
+	inline void set_y_6(float value)
+	{
+		___y_6 = value;
+	}
+
+	inline static int32_t get_offset_of_pos_7() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___pos_7)); }
+	inline Vector3_t3722313464  get_pos_7() const { return ___pos_7; }
+	inline Vector3_t3722313464 * get_address_of_pos_7() { return &___pos_7; }
+	inline void set_pos_7(Vector3_t3722313464  value)
+	{
+		___pos_7 = value;
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
 #endif // CYLINDERCONTROLLER_T4250206988_H
+// System.Object[]
+struct ObjectU5BU5D_t2843939325  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) RuntimeObject * m_Items[1];
+
+public:
+	inline RuntimeObject * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline RuntimeObject * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 
 
 
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m1579109191 (MonoBehaviour_t3962482529 * __this, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
-extern "C" IL2CPP_METHOD_ATTR bool Input_GetKey_m3736388334 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Input_get_mousePosition_m1616496925 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::Rotate(System.Single,System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR void Transform_Rotate_m3172098886 (Transform_t3600365921 * __this, float p0, float p1, float p2, const RuntimeMethod* method);
-// System.Void CylinderController::RotateX()
-extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateX_m1112598035 (CylinderController_t4250206988 * __this, const RuntimeMethod* method);
-// System.Void CylinderController::RotateY()
-extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateY_m3841481390 (CylinderController_t4250206988 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
+extern "C" IL2CPP_METHOD_ATTR bool Input_GetKey_m3736388334 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
+// System.String System.String::Format(System.String,System.Object[])
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Format_m630303134 (RuntimeObject * __this /* static, unused */, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method);
+// System.Void UnityEngine.Debug::Log(System.Object)
+extern "C" IL2CPP_METHOD_ATTR void Debug_Log_m4051431634 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method);
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Vector3__ctor_m3353183577 (Vector3_t3722313464 * __this, float p0, float p1, float p2, const RuntimeMethod* method);
+// UnityEngine.Vector3 CylinderController::GetDeltas()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  CylinderController_GetDeltas_m310444983 (CylinderController_t4250206988 * __this, const RuntimeMethod* method);
+// System.Void CylinderController::RotateX(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateX_m3071066189 (CylinderController_t4250206988 * __this, float ___dx0, const RuntimeMethod* method);
+// System.Void CylinderController::RotateY(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateY_m2642358908 (CylinderController_t4250206988 * __this, float ___dy0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -539,6 +857,7 @@ extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateY_m3841481390 (Cylin
 extern "C" IL2CPP_METHOD_ATTR void CylinderController__ctor_m831152459 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
 {
 	{
+		__this->set_DELTA_MINIMUM_4((2.0f));
 		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -546,98 +865,217 @@ extern "C" IL2CPP_METHOD_ATTR void CylinderController__ctor_m831152459 (Cylinder
 // System.Void CylinderController::Start()
 extern "C" IL2CPP_METHOD_ATTR void CylinderController_Start_m3646651091 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
 {
-	{
-		return;
-	}
-}
-// System.Void CylinderController::RotateX()
-extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateX_m1112598035 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
-{
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (CylinderController_RotateX_m1112598035_MetadataUsageId);
+		il2cpp_codegen_initialize_method (CylinderController_Start_m3646651091_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
-		bool L_0 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)275), /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		Transform_t3600365921 * L_1 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		Transform_Rotate_m3172098886(L_1, (0.0f), (0.0f), (-1.0f), /*hidden argument*/NULL);
-	}
-
-IL_0029:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
-		bool L_2 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)276), /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0052;
-		}
-	}
-	{
-		Transform_t3600365921 * L_3 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		Transform_Rotate_m3172098886(L_3, (0.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
-	}
-
-IL_0052:
-	{
+		Vector3_t3722313464  L_0 = Input_get_mousePosition_m1616496925(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_pos_7(L_0);
+		Vector3_t3722313464 * L_1 = __this->get_address_of_pos_7();
+		float L_2 = L_1->get_x_2();
+		__this->set_x_5(L_2);
+		Vector3_t3722313464 * L_3 = __this->get_address_of_pos_7();
+		float L_4 = L_3->get_y_3();
+		__this->set_y_6(L_4);
 		return;
 	}
 }
-// System.Void CylinderController::RotateY()
-extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateY_m3841481390 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
+// System.Void CylinderController::RotateX(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateX_m3071066189 (CylinderController_t4250206988 * __this, float ___dx0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (CylinderController_RotateY_m3841481390_MetadataUsageId);
+		il2cpp_codegen_initialize_method (CylinderController_RotateX_m3071066189_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
-		bool L_0 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)273), /*hidden argument*/NULL);
-		if (!L_0)
+		float L_0 = ___dx0;
+		float L_1 = fabsf(L_0);
+		float L_2 = __this->get_DELTA_MINIMUM_4();
+		if ((!(((float)L_1) > ((float)L_2))))
 		{
-			goto IL_0029;
-		}
-	}
-	{
-		Transform_t3600365921 * L_1 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		Transform_Rotate_m3172098886(L_1, (1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
-	}
-
-IL_0029:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
-		bool L_2 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)274), /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0052;
+			goto IL_0027;
 		}
 	}
 	{
 		Transform_t3600365921 * L_3 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		Transform_Rotate_m3172098886(L_3, (-1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		float L_4 = ___dx0;
+		Transform_Rotate_m3172098886(L_3, (0.0f), (0.0f), L_4, /*hidden argument*/NULL);
 	}
 
-IL_0052:
+IL_0027:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_5 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)275), /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		Transform_t3600365921 * L_6 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		Transform_Rotate_m3172098886(L_6, (0.0f), (0.0f), (-1.0f), /*hidden argument*/NULL);
+	}
+
+IL_0050:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_7 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)276), /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		Transform_t3600365921 * L_8 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		Transform_Rotate_m3172098886(L_8, (0.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
+	}
+
+IL_0079:
 	{
 		return;
+	}
+}
+// System.Void CylinderController::RotateY(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CylinderController_RotateY_m2642358908 (CylinderController_t4250206988 * __this, float ___dy0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CylinderController_RotateY_m2642358908_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		float L_0 = ___dy0;
+		float L_1 = fabsf(L_0);
+		float L_2 = __this->get_DELTA_MINIMUM_4();
+		if ((!(((float)L_1) > ((float)L_2))))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		Transform_t3600365921 * L_3 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		float L_4 = ___dy0;
+		Transform_Rotate_m3172098886(L_3, L_4, (0.0f), (0.0f), /*hidden argument*/NULL);
+	}
+
+IL_0027:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_5 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)273), /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		Transform_t3600365921 * L_6 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		Transform_Rotate_m3172098886(L_6, (1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+	}
+
+IL_0050:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		bool L_7 = Input_GetKey_m3736388334(NULL /*static, unused*/, ((int32_t)274), /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		Transform_t3600365921 * L_8 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		Transform_Rotate_m3172098886(L_8, (-1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+	}
+
+IL_0079:
+	{
+		return;
+	}
+}
+// UnityEngine.Vector3 CylinderController::GetDeltas()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  CylinderController_GetDeltas_m310444983 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (CylinderController_GetDeltas_m310444983_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_0 = Input_get_mousePosition_m1616496925(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_pos_7(L_0);
+		float L_1 = __this->get_x_5();
+		Vector3_t3722313464 * L_2 = __this->get_address_of_pos_7();
+		float L_3 = L_2->get_x_2();
+		V_0 = ((float)il2cpp_codegen_subtract((float)L_1, (float)L_3));
+		float L_4 = __this->get_y_6();
+		Vector3_t3722313464 * L_5 = __this->get_address_of_pos_7();
+		float L_6 = L_5->get_y_3();
+		V_1 = ((float)il2cpp_codegen_subtract((float)L_4, (float)L_6));
+		Vector3_t3722313464 * L_7 = __this->get_address_of_pos_7();
+		float L_8 = L_7->get_x_2();
+		__this->set_x_5(L_8);
+		Vector3_t3722313464 * L_9 = __this->get_address_of_pos_7();
+		float L_10 = L_9->get_y_3();
+		__this->set_y_6(L_10);
+		ObjectU5BU5D_t2843939325* L_11 = (ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t2843939325* L_12 = L_11;
+		float L_13 = __this->get_x_5();
+		float L_14 = L_13;
+		RuntimeObject * L_15 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_14);
+		ArrayElementTypeCheck (L_12, L_15);
+		(L_12)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_15);
+		ObjectU5BU5D_t2843939325* L_16 = L_12;
+		float L_17 = __this->get_y_6();
+		float L_18 = L_17;
+		RuntimeObject * L_19 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_18);
+		ArrayElementTypeCheck (L_16, L_19);
+		(L_16)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_19);
+		ObjectU5BU5D_t2843939325* L_20 = L_16;
+		float L_21 = V_0;
+		float L_22 = L_21;
+		RuntimeObject * L_23 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_22);
+		ArrayElementTypeCheck (L_20, L_23);
+		(L_20)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_23);
+		ObjectU5BU5D_t2843939325* L_24 = L_20;
+		float L_25 = V_1;
+		float L_26 = L_25;
+		RuntimeObject * L_27 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_26);
+		ArrayElementTypeCheck (L_24, L_27);
+		(L_24)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_27);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_28 = String_Format_m630303134(NULL /*static, unused*/, _stringLiteral2175761519, L_24, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
+		float L_29 = V_0;
+		float L_30 = V_1;
+		Vector3_t3722313464  L_31;
+		memset(&L_31, 0, sizeof(L_31));
+		Vector3__ctor_m3353183577((&L_31), L_29, L_30, (0.0f), /*hidden argument*/NULL);
+		return L_31;
 	}
 }
 // System.Void CylinderController::Update()
 extern "C" IL2CPP_METHOD_ATTR void CylinderController_Update_m533422403 (CylinderController_t4250206988 * __this, const RuntimeMethod* method)
 {
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
 	{
-		CylinderController_RotateX_m1112598035(__this, /*hidden argument*/NULL);
-		CylinderController_RotateY_m3841481390(__this, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_0 = CylinderController_GetDeltas_m310444983(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		float L_1 = (&V_0)->get_x_2();
+		CylinderController_RotateX_m3071066189(__this, L_1, /*hidden argument*/NULL);
+		float L_2 = (&V_0)->get_y_3();
+		CylinderController_RotateY_m2642358908(__this, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
