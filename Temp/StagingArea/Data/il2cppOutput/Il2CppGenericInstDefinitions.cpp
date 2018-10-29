@@ -222,6 +222,7 @@ extern const Il2CppType TriggerRule_t1946298321_0_0_0;
 extern const Il2CppType DefaultExecutionOrder_t3059642329_0_0_0;
 extern const Il2CppType PlayerConnection_t3081694049_0_0_0;
 extern const Il2CppType GUILayer_t2783472903_0_0_0;
+extern const Il2CppType ObjectController_t485678078_0_0_0;
 extern const Il2CppType IEnumerable_1_t1615002100_gp_0_0_0_0;
 extern const Il2CppType Array_InternalArray__IEnumerable_GetEnumerator_m370636962_gp_0_0_0_0;
 extern const Il2CppType Array_Sort_m673391272_gp_0_0_0_0;
@@ -809,6 +810,8 @@ static const RuntimeType* GenInst_PlayerConnection_t3081694049_0_0_0_Types[] = {
 extern const Il2CppGenericInst GenInst_PlayerConnection_t3081694049_0_0_0 = { 1, GenInst_PlayerConnection_t3081694049_0_0_0_Types };
 static const RuntimeType* GenInst_GUILayer_t2783472903_0_0_0_Types[] = { (&GUILayer_t2783472903_0_0_0) };
 extern const Il2CppGenericInst GenInst_GUILayer_t2783472903_0_0_0 = { 1, GenInst_GUILayer_t2783472903_0_0_0_Types };
+static const RuntimeType* GenInst_ObjectController_t485678078_0_0_0_Types[] = { (&ObjectController_t485678078_0_0_0) };
+extern const Il2CppGenericInst GenInst_ObjectController_t485678078_0_0_0 = { 1, GenInst_ObjectController_t485678078_0_0_0_Types };
 static const RuntimeType* GenInst_DictionaryEntry_t3123975638_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types[] = { (&DictionaryEntry_t3123975638_0_0_0), (&DictionaryEntry_t3123975638_0_0_0) };
 extern const Il2CppGenericInst GenInst_DictionaryEntry_t3123975638_0_0_0_DictionaryEntry_t3123975638_0_0_0 = { 2, GenInst_DictionaryEntry_t3123975638_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types };
 static const RuntimeType* GenInst_KeyValuePair_2_t3842366416_0_0_0_KeyValuePair_2_t3842366416_0_0_0_Types[] = { (&KeyValuePair_2_t3842366416_0_0_0), (&KeyValuePair_2_t3842366416_0_0_0) };
@@ -1067,7 +1070,7 @@ static const RuntimeType* GenInst_UnityEvent_3_t3206388141_gp_0_0_0_0_UnityEvent
 extern const Il2CppGenericInst GenInst_UnityEvent_3_t3206388141_gp_0_0_0_0_UnityEvent_3_t3206388141_gp_1_0_0_0_UnityEvent_3_t3206388141_gp_2_0_0_0 = { 3, GenInst_UnityEvent_3_t3206388141_gp_0_0_0_0_UnityEvent_3_t3206388141_gp_1_0_0_0_UnityEvent_3_t3206388141_gp_2_0_0_0_Types };
 static const RuntimeType* GenInst_UnityEvent_4_t3609672668_gp_0_0_0_0_UnityEvent_4_t3609672668_gp_1_0_0_0_UnityEvent_4_t3609672668_gp_2_0_0_0_UnityEvent_4_t3609672668_gp_3_0_0_0_Types[] = { (&UnityEvent_4_t3609672668_gp_0_0_0_0), (&UnityEvent_4_t3609672668_gp_1_0_0_0), (&UnityEvent_4_t3609672668_gp_2_0_0_0), (&UnityEvent_4_t3609672668_gp_3_0_0_0) };
 extern const Il2CppGenericInst GenInst_UnityEvent_4_t3609672668_gp_0_0_0_0_UnityEvent_4_t3609672668_gp_1_0_0_0_UnityEvent_4_t3609672668_gp_2_0_0_0_UnityEvent_4_t3609672668_gp_3_0_0_0 = { 4, GenInst_UnityEvent_4_t3609672668_gp_0_0_0_0_UnityEvent_4_t3609672668_gp_1_0_0_0_UnityEvent_4_t3609672668_gp_2_0_0_0_UnityEvent_4_t3609672668_gp_3_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[362] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[363] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Int32_t2950945753_0_0_0,
@@ -1302,6 +1305,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[362] =
 	&GenInst_DefaultExecutionOrder_t3059642329_0_0_0,
 	&GenInst_PlayerConnection_t3081694049_0_0_0,
 	&GenInst_GUILayer_t2783472903_0_0_0,
+	&GenInst_ObjectController_t485678078_0_0_0,
 	&GenInst_DictionaryEntry_t3123975638_0_0_0_DictionaryEntry_t3123975638_0_0_0,
 	&GenInst_KeyValuePair_2_t3842366416_0_0_0_KeyValuePair_2_t3842366416_0_0_0,
 	&GenInst_KeyValuePair_2_t3842366416_0_0_0_RuntimeObject_0_0_0,

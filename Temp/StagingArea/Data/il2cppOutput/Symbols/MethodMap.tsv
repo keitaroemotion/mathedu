@@ -8029,7 +8029,6 @@ CameraCallback_BeginInvoke_m4249233405	System.IAsyncResult UnityEngine.Camera/Ca
 CameraCallback_EndInvoke_m3846578433	System.Void UnityEngine.Camera/CameraCallback::EndInvoke(System.IAsyncResult)	UnityEngine.CoreModule
 ClassLibraryInitializer_Init_m988673678	System.Void UnityEngine.ClassLibraryInitializer::Init()	UnityEngine.CoreModule
 Component__ctor_m1928064382	System.Void UnityEngine.Component::.ctor()	UnityEngine.CoreModule
-Component_get_transform_m3162698980	UnityEngine.Transform UnityEngine.Component::get_transform()	UnityEngine.CoreModule
 Component_get_gameObject_m442555142	UnityEngine.GameObject UnityEngine.Component::get_gameObject()	UnityEngine.CoreModule
 Component_GetComponent_m886226392	UnityEngine.Component UnityEngine.Component::GetComponent(System.Type)	UnityEngine.CoreModule
 Coroutine__ctor_m1058504400	System.Void UnityEngine.Coroutine::.ctor()	UnityEngine.CoreModule
@@ -8175,8 +8174,10 @@ GUILayer_HitTest_m2079012401	UnityEngine.GUIElement UnityEngine.GUILayer::HitTes
 GUILayer_HitTest_Injected_m3662865982	UnityEngine.GUIElement UnityEngine.GUILayer::HitTest_Injected(UnityEngine.Vector2&)	UnityEngine.CoreModule
 GameObject__ctor_m3707688467	System.Void UnityEngine.GameObject::.ctor()	UnityEngine.CoreModule
 GameObject_GetComponent_m1027872079	UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)	UnityEngine.CoreModule
+GameObject_get_transform_m1369836730	UnityEngine.Transform UnityEngine.GameObject::get_transform()	UnityEngine.CoreModule
 GameObject_SendMessage_m3720186693	System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)	UnityEngine.CoreModule
 GameObject_Internal_CreateGameObject_m2533291801	System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)	UnityEngine.CoreModule
+GameObject_Find_m2032535176	UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)	UnityEngine.CoreModule
 Gradient__ctor_m173848750	System.Void UnityEngine.Gradient::.ctor()	UnityEngine.CoreModule
 Gradient_Init_m2499008394	System.IntPtr UnityEngine.Gradient::Init()	UnityEngine.CoreModule
 Gradient_Cleanup_m3422458828	System.Void UnityEngine.Gradient::Cleanup()	UnityEngine.CoreModule
@@ -8479,6 +8480,7 @@ Texture3D__ctor_m1599887784	System.Void UnityEngine.Texture3D::.ctor(System.Int3
 Texture3D__ctor_m448815750	System.Void UnityEngine.Texture3D::.ctor(System.Int32,System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)	UnityEngine.CoreModule
 Texture3D_Internal_CreateImpl_m1882516456	System.Boolean UnityEngine.Texture3D::Internal_CreateImpl(UnityEngine.Texture3D,System.Int32,System.Int32,System.Int32,UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.TextureCreationFlags)	UnityEngine.CoreModule
 Texture3D_Internal_Create_m4250388922	System.Void UnityEngine.Texture3D::Internal_Create(UnityEngine.Texture3D,System.Int32,System.Int32,System.Int32,UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.Experimental.Rendering.TextureCreationFlags)	UnityEngine.CoreModule
+Time_get_deltaTime_m372706562	System.Single UnityEngine.Time::get_deltaTime()	UnityEngine.CoreModule
 Transform__ctor_m3470711880	System.Void UnityEngine.Transform::.ctor()	UnityEngine.CoreModule
 Transform_get_rotation_m3502953881	UnityEngine.Quaternion UnityEngine.Transform::get_rotation()	UnityEngine.CoreModule
 Transform_set_rotation_m3524318132	System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)	UnityEngine.CoreModule
@@ -8829,11 +8831,15 @@ ValueProperty_get_propertyValue_m3340090327	System.String UnityEngine.Analytics.
 ValueProperty_get_target_m1728151320	UnityEngine.Analytics.TrackableField UnityEngine.Analytics.ValueProperty::get_target()	UnityEngine.Analytics
 ValueProperty_IsValid_m3724034537	System.Boolean UnityEngine.Analytics.ValueProperty::IsValid()	UnityEngine.Analytics
 CylinderController__ctor_m831152459	System.Void CylinderController::.ctor()	Assembly-CSharp
+CylinderController_GetObjectController_m2683287846	ObjectController CylinderController::GetObjectController()	Assembly-CSharp
 CylinderController_Start_m3646651091	System.Void CylinderController::Start()	Assembly-CSharp
-CylinderController_RotateX_m3071066189	System.Void CylinderController::RotateX(System.Single)	Assembly-CSharp
-CylinderController_RotateY_m2642358908	System.Void CylinderController::RotateY(System.Single)	Assembly-CSharp
-CylinderController_GetDeltas_m310444983	UnityEngine.Vector3 CylinderController::GetDeltas()	Assembly-CSharp
 CylinderController_Update_m533422403	System.Void CylinderController::Update()	Assembly-CSharp
+ObjectController__ctor_m2493291221	System.Void ObjectController::.ctor()	Assembly-CSharp
+ObjectController_Start_m1213525577	System.Void ObjectController::Start()	Assembly-CSharp
+ObjectController_RotateX_m1923132909	System.Void ObjectController::RotateX(UnityEngine.GameObject,System.Single)	Assembly-CSharp
+ObjectController_RotateY_m1789397992	System.Void ObjectController::RotateY(UnityEngine.GameObject,System.Single)	Assembly-CSharp
+ObjectController_GetDeltas_m4159204935	UnityEngine.Vector3 ObjectController::GetDeltas()	Assembly-CSharp
+ObjectController_Rotate_m2377696781	System.Void ObjectController::Rotate(UnityEngine.GameObject)	Assembly-CSharp
 NULL	System.Int32 System.IComparable`1<System.Object>::CompareTo(T)	mscorlib
 NULL	System.Boolean System.IEquatable`1<System.Object>::Equals(T)	mscorlib
 NULL	T System.Collections.Generic.IEnumerator`1<System.Object>::get_Current()	mscorlib
@@ -9244,6 +9250,7 @@ Func_2_BeginInvoke_m2941925968_gshared	System.IAsyncResult System.Func`2<System.
 Func_2_EndInvoke_m805099398_gshared	TResult System.Func`2<System.Object,System.Object>::EndInvoke(System.IAsyncResult)	System.Core
 AttributeHelperEngine_GetCustomAttributeOfType_TisRuntimeObject_m429013101_gshared	T UnityEngine.AttributeHelperEngine::GetCustomAttributeOfType<System.Object>(System.Type)	UnityEngine.CoreModule
 Component_GetComponent_TisRuntimeObject_m2906321015_gshared	T UnityEngine.Component::GetComponent<System.Object>()	UnityEngine.CoreModule
+GameObject_GetComponent_TisRuntimeObject_m3920941149_gshared	T UnityEngine.GameObject::GetComponent<System.Object>()	UnityEngine.CoreModule
 ScriptableObject_CreateInstance_TisRuntimeObject_m1552711675_gshared	T UnityEngine.ScriptableObject::CreateInstance<System.Object>()	UnityEngine.CoreModule
 BaseInvokableCall_ThrowOnInvalidArg_TisRuntimeObject_m2266633109_gshared	System.Void UnityEngine.Events.BaseInvokableCall::ThrowOnInvalidArg<System.Object>(System.Object)	UnityEngine.CoreModule
 InvokableCall_1__ctor_m974734014_gshared	System.Void UnityEngine.Events.InvokableCall`1<System.Object>::.ctor(System.Object,System.Reflection.MethodInfo)	UnityEngine.CoreModule
@@ -9446,6 +9453,8 @@ Enumerator_get_Current_m470245444_AdjustorThunk	!0 System.Collections.Generic.Li
 Enumerator_MoveNext_m2142368520_AdjustorThunk	System.Boolean System.Collections.Generic.List`1/Enumerator<UnityEngine.Analytics.TrackableProperty/FieldWithTarget>::MoveNext()	UnityEngine.Analytics
 Enumerator_Dispose_m3007748546_AdjustorThunk	System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.Analytics.TrackableProperty/FieldWithTarget>::Dispose()	mscorlib
 List_1__ctor_m2321703786_gshared	System.Void System.Collections.Generic.List`1<UnityEngine.Analytics.TriggerRule>::.ctor()	UnityEngine.Analytics
+GameObject_GetComponent_TisRuntimeObject_m3920941149_gshared	!!0 UnityEngine.GameObject::GetComponent<ObjectController>()	Assembly-CSharp
+List_1_get_Item_m2287542950_gshared	!0 System.Collections.Generic.List`1<System.String>::get_Item(System.Int32)	Assembly-CSharp
 Array_InternalArray__ICollection_Contains_TisTableRange_t3332867892_m220823873_gshared	System.Boolean System.Array::InternalArray__ICollection_Contains<Mono.Globalization.Unicode.CodePointIndexer/TableRange>(T)	mscorlib
 Array_InternalArray__ICollection_Contains_TisClientCertificateType_t1004704908_m3504437380_gshared	System.Boolean System.Array::InternalArray__ICollection_Contains<Mono.Security.Protocol.Tls.Handshake.ClientCertificateType>(T)	mscorlib
 Array_InternalArray__ICollection_Contains_TisBoolean_t97287965_m4124615291_gshared	System.Boolean System.Array::InternalArray__ICollection_Contains<System.Boolean>(T)	mscorlib

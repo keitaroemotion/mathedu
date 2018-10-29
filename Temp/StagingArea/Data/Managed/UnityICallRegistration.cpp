@@ -238,10 +238,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Component_get_gameObject();
 		Register_UnityEngine_Component_get_gameObject();
 
-		//UnityEngine.Transform UnityEngine.Component::get_transform()
-		void Register_UnityEngine_Component_get_transform();
-		Register_UnityEngine_Component_get_transform();
-
 	//End Registrations for type : UnityEngine.Component
 
 	//Start Registrations for type : UnityEngine.Coroutine
@@ -333,6 +329,14 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
 		void Register_UnityEngine_GameObject_GetComponent();
 		Register_UnityEngine_GameObject_GetComponent();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
+
+		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
+		void Register_UnityEngine_GameObject_get_transform();
+		Register_UnityEngine_GameObject_get_transform();
 
 	//End Registrations for type : UnityEngine.GameObject
 
@@ -655,6 +659,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Texture3D_Internal_CreateImpl();
 
 	//End Registrations for type : UnityEngine.Texture3D
+
+	//Start Registrations for type : UnityEngine.Time
+
+		//System.Single UnityEngine.Time::get_deltaTime()
+		void Register_UnityEngine_Time_get_deltaTime();
+		Register_UnityEngine_Time_get_deltaTime();
+
+	//End Registrations for type : UnityEngine.Time
 
 	//Start Registrations for type : UnityEngine.Transform
 

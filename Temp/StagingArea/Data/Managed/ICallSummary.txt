@@ -46,7 +46,6 @@ UnityEngine.Camera::RaycastTry2D_Injected
 UnityEngine.Camera::RaycastTry_Injected
 UnityEngine.Camera::get_targetTexture
 UnityEngine.Component::get_gameObject
-UnityEngine.Component::get_transform
 UnityEngine.Coroutine::ReleaseCoroutine
 UnityEngine.Cubemap::Internal_CreateImpl
 UnityEngine.CullingGroup::DisposeInternal
@@ -62,6 +61,8 @@ UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetRenderTextureFormat
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
 UnityEngine.GameObject::GetComponent
+UnityEngine.GameObject::Find
+UnityEngine.GameObject::get_transform
 UnityEngine.Gradient::Init
 UnityEngine.Gradient::Cleanup
 UnityEngine.GUILayer::HitTest_Injected
@@ -122,6 +123,7 @@ UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType
 UnityEngine.SystemInfo::IsFormatSupported
 UnityEngine.Texture2DArray::Internal_CreateImpl
 UnityEngine.Texture3D::Internal_CreateImpl
+UnityEngine.Time::get_deltaTime
 UnityEngine.Transform::get_childCount
 UnityEngine.Transform::get_localRotation_Injected
 UnityEngine.Transform::get_rotation_Injected

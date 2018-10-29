@@ -130,7 +130,7 @@ class VideoPlayer;
 class WindZone; 
 namespace UI { class CanvasRenderer; } 
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; 
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; 
 class MeshCollider; 
@@ -267,7 +267,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 58 non stripped classes
+	//Total: 59 non stripped classes
 	//0. Behaviour
 	RegisterUnityClass<Behaviour>("Core");
 	//1. Unity::Component
@@ -366,23 +366,25 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<PerformanceReportingManager>("PerformanceReporting");
 	//48. UnityAnalyticsManager
 	RegisterUnityClass<UnityAnalyticsManager>("UnityAnalytics");
-	//49. LightProbes
-	RegisterUnityClass<LightProbes>("Core");
-	//50. LevelGameManager
-	RegisterUnityClass<LevelGameManager>("Core");
-	//51. LightmapSettings
-	RegisterUnityClass<LightmapSettings>("Core");
-	//52. RenderSettings
-	RegisterUnityClass<RenderSettings>("Core");
-	//53. Collider
+	//49. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//50. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//54. CapsuleCollider
+	//51. LightProbes
+	RegisterUnityClass<LightProbes>("Core");
+	//52. LevelGameManager
+	RegisterUnityClass<LevelGameManager>("Core");
+	//53. LightmapSettings
+	RegisterUnityClass<LightmapSettings>("Core");
+	//54. RenderSettings
+	RegisterUnityClass<RenderSettings>("Core");
+	//55. CapsuleCollider
 	RegisterUnityClass<CapsuleCollider>("Physics");
-	//55. Light
+	//56. Light
 	RegisterUnityClass<Light>("Core");
-	//56. AudioBehaviour
+	//57. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
-	//57. AudioListener
+	//58. AudioListener
 	RegisterUnityClass<AudioListener>("Audio");
 
 }

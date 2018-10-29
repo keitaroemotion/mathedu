@@ -4047,6 +4047,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SYSTEMINFO_T3561985952_H
+#ifndef TIME_T2420636075_H
+#define TIME_T2420636075_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Time
+struct  Time_t2420636075  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TIME_T2420636075_H
 #ifndef ENUMERATOR_T3442430665_H
 #define ENUMERATOR_T3442430665_H
 #ifdef __clang__
@@ -20331,16 +20351,6 @@ extern "C" IL2CPP_METHOD_ATTR void Component__ctor_m1928064382 (Component_t19236
 		return;
 	}
 }
-// UnityEngine.Transform UnityEngine.Component::get_transform()
-extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * Component_get_transform_m3162698980 (Component_t1923634451 * __this, const RuntimeMethod* method)
-{
-	typedef Transform_t3600365921 * (*Component_get_transform_m3162698980_ftn) (Component_t1923634451 *);
-	static Component_get_transform_m3162698980_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Component_get_transform_m3162698980_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Component::get_transform()");
-	Transform_t3600365921 * retVal = _il2cpp_icall_func(__this);
-	return retVal;
-}
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Component_get_gameObject_m442555142 (Component_t1923634451 * __this, const RuntimeMethod* method)
 {
@@ -26169,6 +26179,16 @@ extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * GameObject_GetComponent_m1
 	Component_t1923634451 * retVal = _il2cpp_icall_func(__this, ___type0);
 	return retVal;
 }
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+extern "C" IL2CPP_METHOD_ATTR Transform_t3600365921 * GameObject_get_transform_m1369836730 (GameObject_t1113636619 * __this, const RuntimeMethod* method)
+{
+	typedef Transform_t3600365921 * (*GameObject_get_transform_m1369836730_ftn) (GameObject_t1113636619 *);
+	static GameObject_get_transform_m1369836730_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_get_transform_m1369836730_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::get_transform()");
+	Transform_t3600365921 * retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
 extern "C" IL2CPP_METHOD_ATTR void GameObject_SendMessage_m3720186693 (GameObject_t1113636619 * __this, String_t* ___methodName0, RuntimeObject * ___value1, int32_t ___options2, const RuntimeMethod* method)
 {
@@ -26186,6 +26206,16 @@ extern "C" IL2CPP_METHOD_ATTR void GameObject_Internal_CreateGameObject_m2533291
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_Internal_CreateGameObject_m2533291801_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)");
 	_il2cpp_icall_func(___self0, ___name1);
+}
+// UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * GameObject_Find_m2032535176 (RuntimeObject * __this /* static, unused */, String_t* ___name0, const RuntimeMethod* method)
+{
+	typedef GameObject_t1113636619 * (*GameObject_Find_m2032535176_ftn) (String_t*);
+	static GameObject_Find_m2032535176_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_Find_m2032535176_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::Find(System.String)");
+	GameObject_t1113636619 * retVal = _il2cpp_icall_func(___name0);
+	return retVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -35898,6 +35928,24 @@ IL_001e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Single UnityEngine.Time::get_deltaTime()
+extern "C" IL2CPP_METHOD_ATTR float Time_get_deltaTime_m372706562 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	typedef float (*Time_get_deltaTime_m372706562_ftn) ();
+	static Time_get_deltaTime_m372706562_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_deltaTime_m372706562_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_deltaTime()");
+	float retVal = _il2cpp_icall_func();
+	return retVal;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

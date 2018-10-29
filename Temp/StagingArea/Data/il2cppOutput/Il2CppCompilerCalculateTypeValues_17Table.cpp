@@ -26,6 +26,8 @@ struct AsyncCallback_t3962456242;
 struct CharU5BU5D_t3528271667;
 // System.Collections.Generic.Dictionary`2<System.String,System.Object>
 struct Dictionary_2_t2865362463;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_t3319525431;
 // System.Collections.Generic.List`1<UnityEngine.Analytics.TrackableProperty/FieldWithTarget>
 struct List_1_t235857739;
 // System.Collections.Generic.List`1<UnityEngine.Analytics.TriggerRule>
@@ -850,6 +852,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // TRIGGERTYPE_T105272677_H
+#ifndef PROPERTYTYPE_T4040930247_H
+#define PROPERTYTYPE_T4040930247_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Analytics.ValueProperty/PropertyType
+struct  PropertyType_t4040930247 
+{
+public:
+	// System.Int32 UnityEngine.Analytics.ValueProperty/PropertyType::value__
+	int32_t ___value___1;
+
+public:
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(PropertyType_t4040930247, ___value___1)); }
+	inline int32_t get_value___1() const { return ___value___1; }
+	inline int32_t* get_address_of_value___1() { return &___value___1; }
+	inline void set_value___1(int32_t value)
+	{
+		___value___1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PROPERTYTYPE_T4040930247_H
 #ifndef OBJECT_T631007953_H
 #define OBJECT_T631007953_H
 #ifdef __clang__
@@ -1242,17 +1273,67 @@ public:
 struct  CylinderController_t4250206988  : public MonoBehaviour_t3962482529
 {
 public:
-	// System.Single CylinderController::DELTA_MINIMUM
+	// System.Int32 CylinderController::objectIndex
+	int32_t ___objectIndex_4;
+	// System.Single CylinderController::delta
+	float ___delta_5;
+	// System.Collections.Generic.List`1<System.String> CylinderController::objects
+	List_1_t3319525431 * ___objects_6;
+
+public:
+	inline static int32_t get_offset_of_objectIndex_4() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___objectIndex_4)); }
+	inline int32_t get_objectIndex_4() const { return ___objectIndex_4; }
+	inline int32_t* get_address_of_objectIndex_4() { return &___objectIndex_4; }
+	inline void set_objectIndex_4(int32_t value)
+	{
+		___objectIndex_4 = value;
+	}
+
+	inline static int32_t get_offset_of_delta_5() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___delta_5)); }
+	inline float get_delta_5() const { return ___delta_5; }
+	inline float* get_address_of_delta_5() { return &___delta_5; }
+	inline void set_delta_5(float value)
+	{
+		___delta_5 = value;
+	}
+
+	inline static int32_t get_offset_of_objects_6() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___objects_6)); }
+	inline List_1_t3319525431 * get_objects_6() const { return ___objects_6; }
+	inline List_1_t3319525431 ** get_address_of_objects_6() { return &___objects_6; }
+	inline void set_objects_6(List_1_t3319525431 * value)
+	{
+		___objects_6 = value;
+		Il2CppCodeGenWriteBarrier((&___objects_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CYLINDERCONTROLLER_T4250206988_H
+#ifndef OBJECTCONTROLLER_T485678078_H
+#define OBJECTCONTROLLER_T485678078_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// ObjectController
+struct  ObjectController_t485678078  : public MonoBehaviour_t3962482529
+{
+public:
+	// System.Single ObjectController::DELTA_MINIMUM
 	float ___DELTA_MINIMUM_4;
-	// System.Single CylinderController::x
+	// System.Single ObjectController::x
 	float ___x_5;
-	// System.Single CylinderController::y
+	// System.Single ObjectController::y
 	float ___y_6;
-	// UnityEngine.Vector3 CylinderController::pos
+	// UnityEngine.Vector3 ObjectController::pos
 	Vector3_t3722313464  ___pos_7;
 
 public:
-	inline static int32_t get_offset_of_DELTA_MINIMUM_4() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___DELTA_MINIMUM_4)); }
+	inline static int32_t get_offset_of_DELTA_MINIMUM_4() { return static_cast<int32_t>(offsetof(ObjectController_t485678078, ___DELTA_MINIMUM_4)); }
 	inline float get_DELTA_MINIMUM_4() const { return ___DELTA_MINIMUM_4; }
 	inline float* get_address_of_DELTA_MINIMUM_4() { return &___DELTA_MINIMUM_4; }
 	inline void set_DELTA_MINIMUM_4(float value)
@@ -1260,7 +1341,7 @@ public:
 		___DELTA_MINIMUM_4 = value;
 	}
 
-	inline static int32_t get_offset_of_x_5() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___x_5)); }
+	inline static int32_t get_offset_of_x_5() { return static_cast<int32_t>(offsetof(ObjectController_t485678078, ___x_5)); }
 	inline float get_x_5() const { return ___x_5; }
 	inline float* get_address_of_x_5() { return &___x_5; }
 	inline void set_x_5(float value)
@@ -1268,7 +1349,7 @@ public:
 		___x_5 = value;
 	}
 
-	inline static int32_t get_offset_of_y_6() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___y_6)); }
+	inline static int32_t get_offset_of_y_6() { return static_cast<int32_t>(offsetof(ObjectController_t485678078, ___y_6)); }
 	inline float get_y_6() const { return ___y_6; }
 	inline float* get_address_of_y_6() { return &___y_6; }
 	inline void set_y_6(float value)
@@ -1276,7 +1357,7 @@ public:
 		___y_6 = value;
 	}
 
-	inline static int32_t get_offset_of_pos_7() { return static_cast<int32_t>(offsetof(CylinderController_t4250206988, ___pos_7)); }
+	inline static int32_t get_offset_of_pos_7() { return static_cast<int32_t>(offsetof(ObjectController_t485678078, ___pos_7)); }
 	inline Vector3_t3722313464  get_pos_7() const { return ___pos_7; }
 	inline Vector3_t3722313464 * get_address_of_pos_7() { return &___pos_7; }
 	inline void set_pos_7(Vector3_t3722313464  value)
@@ -1288,7 +1369,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // CYLINDERCONTROLLER_T4250206988_H
+#endif // OBJECTCONTROLLER_T485678078_H
 #ifndef ANALYTICSTRACKER_T731021378_H
 #define ANALYTICSTRACKER_T731021378_H
 #ifdef __clang__
@@ -1371,8 +1452,16 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1700 = { sizeof (AnalyticsTracker_t731021378), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1700[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1700 = { sizeof (PropertyType_t4040930247)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1700[4] = 
+{
+	PropertyType_t4040930247::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
+	0,
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1701 = { sizeof (AnalyticsTracker_t731021378), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1701[5] = 
 {
 	AnalyticsTracker_t731021378::get_offset_of_m_EventName_4(),
 	AnalyticsTracker_t731021378::get_offset_of_m_Dict_5(),
@@ -1380,8 +1469,8 @@ extern const int32_t g_FieldOffsetTable1700[5] =
 	AnalyticsTracker_t731021378::get_offset_of_m_TrackableProperty_7(),
 	AnalyticsTracker_t731021378::get_offset_of_m_Trigger_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1701 = { sizeof (Trigger_t4199345191)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1701[8] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1702 = { sizeof (Trigger_t4199345191)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1702[8] = 
 {
 	Trigger_t4199345191::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -1392,14 +1481,14 @@ extern const int32_t g_FieldOffsetTable1701[8] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1702 = { sizeof (TrackableProperty_t3943537984), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1702[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1703 = { sizeof (TrackableProperty_t3943537984), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1703[2] = 
 {
 	0,
 	TrackableProperty_t3943537984::get_offset_of_m_Fields_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1703 = { sizeof (FieldWithTarget_t3058750293), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1703[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1704 = { sizeof (FieldWithTarget_t3058750293), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1704[6] = 
 {
 	FieldWithTarget_t3058750293::get_offset_of_m_ParamName_0(),
 	FieldWithTarget_t3058750293::get_offset_of_m_Target_1(),
@@ -1408,16 +1497,16 @@ extern const int32_t g_FieldOffsetTable1703[6] =
 	FieldWithTarget_t3058750293::get_offset_of_m_DoStatic_4(),
 	FieldWithTarget_t3058750293::get_offset_of_m_StaticString_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1704 = { sizeof (TriggerBool_t501031542)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1704[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1705 = { sizeof (TriggerBool_t501031542)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1705[4] = 
 {
 	TriggerBool_t501031542::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1705 = { sizeof (TriggerLifecycleEvent_t3193146760)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1705[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1706 = { sizeof (TriggerLifecycleEvent_t3193146760)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1706[9] = 
 {
 	TriggerLifecycleEvent_t3193146760::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -1429,8 +1518,8 @@ extern const int32_t g_FieldOffsetTable1705[9] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1706 = { sizeof (TriggerOperator_t3611898925)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1706[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1707 = { sizeof (TriggerOperator_t3611898925)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1707[9] = 
 {
 	TriggerOperator_t3611898925::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -1442,8 +1531,8 @@ extern const int32_t g_FieldOffsetTable1706[9] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1707 = { sizeof (TriggerType_t105272677)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable1707[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1708 = { sizeof (TriggerType_t105272677)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const int32_t g_FieldOffsetTable1708[5] = 
 {
 	TriggerType_t105272677::get_offset_of_value___1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	0,
@@ -1451,13 +1540,13 @@ extern const int32_t g_FieldOffsetTable1707[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1708 = { sizeof (TriggerListContainer_t2032715483), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1708[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1709 = { sizeof (TriggerListContainer_t2032715483), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1709[1] = 
 {
 	TriggerListContainer_t2032715483::get_offset_of_m_Rules_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1709 = { sizeof (EventTrigger_t2527451695), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1709[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1710 = { sizeof (EventTrigger_t2527451695), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1710[12] = 
 {
 	EventTrigger_t2527451695::get_offset_of_m_IsTriggerExpanded_0(),
 	EventTrigger_t2527451695::get_offset_of_m_Type_1(),
@@ -1472,30 +1561,37 @@ extern const int32_t g_FieldOffsetTable1709[12] =
 	EventTrigger_t2527451695::get_offset_of_m_TriggerFunction_10(),
 	EventTrigger_t2527451695::get_offset_of_m_Method_11(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1710 = { sizeof (OnTrigger_t4184125570), sizeof(Il2CppMethodPointer), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1711 = { sizeof (TrackableTrigger_t621205209), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1711[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1711 = { sizeof (OnTrigger_t4184125570), sizeof(Il2CppMethodPointer), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1712 = { sizeof (TrackableTrigger_t621205209), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1712[2] = 
 {
 	TrackableTrigger_t621205209::get_offset_of_m_Target_0(),
 	TrackableTrigger_t621205209::get_offset_of_m_MethodPath_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1712 = { sizeof (TriggerMethod_t582536534), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1713 = { sizeof (TriggerRule_t1946298321), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1713[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1713 = { sizeof (TriggerMethod_t582536534), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1714 = { sizeof (TriggerRule_t1946298321), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1714[4] = 
 {
 	TriggerRule_t1946298321::get_offset_of_m_Target_0(),
 	TriggerRule_t1946298321::get_offset_of_m_Operator_1(),
 	TriggerRule_t1946298321::get_offset_of_m_Value_2(),
 	TriggerRule_t1946298321::get_offset_of_m_Value2_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1714 = { sizeof (U3CModuleU3E_t692745538), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1715 = { sizeof (CylinderController_t4250206988), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1715[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1715 = { sizeof (U3CModuleU3E_t692745538), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1716 = { sizeof (CylinderController_t4250206988), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1716[3] = 
 {
-	CylinderController_t4250206988::get_offset_of_DELTA_MINIMUM_4(),
-	CylinderController_t4250206988::get_offset_of_x_5(),
-	CylinderController_t4250206988::get_offset_of_y_6(),
-	CylinderController_t4250206988::get_offset_of_pos_7(),
+	CylinderController_t4250206988::get_offset_of_objectIndex_4(),
+	CylinderController_t4250206988::get_offset_of_delta_5(),
+	CylinderController_t4250206988::get_offset_of_objects_6(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1717 = { sizeof (ObjectController_t485678078), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable1717[4] = 
+{
+	ObjectController_t485678078::get_offset_of_DELTA_MINIMUM_4(),
+	ObjectController_t485678078::get_offset_of_x_5(),
+	ObjectController_t485678078::get_offset_of_y_6(),
+	ObjectController_t485678078::get_offset_of_pos_7(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

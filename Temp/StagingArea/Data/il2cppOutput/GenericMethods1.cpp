@@ -217,6 +217,7 @@ extern const uint32_t Array_InternalArray__get_Item_TisX509ChainStatus_t13360271
 extern const uint32_t AttributeHelperEngine_GetCustomAttributeOfType_TisRuntimeObject_m429013101_MetadataUsageId;
 extern const uint32_t Component_GetComponent_TisRuntimeObject_m2906321015_MetadataUsageId;
 extern const uint32_t Enumerable_Single_TisRuntimeObject_m1146889774_MetadataUsageId;
+extern const uint32_t GameObject_GetComponent_TisRuntimeObject_m3920941149_MetadataUsageId;
 extern const uint32_t ScriptableObject_CreateInstance_TisRuntimeObject_m1552711675_MetadataUsageId;
 struct Object_t631007953_marshaled_com;
 struct PlayerLoopSystem_t105772105_marshaled_com;
@@ -3295,6 +3296,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPONENT_T1923634451_H
+#ifndef GAMEOBJECT_T1113636619_H
+#define GAMEOBJECT_T1113636619_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.GameObject
+struct  GameObject_t1113636619  : public Object_t631007953
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // GAMEOBJECT_T1113636619_H
 #ifndef PLAYABLEBINDING_T354260709_H
 #define PLAYABLEBINDING_T354260709_H
 #ifdef __clang__
@@ -3607,6 +3628,8 @@ extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m3628145864
 extern "C" IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m1620074514 (RuntimeObject * __this /* static, unused */, RuntimeTypeHandle_t3027515415  p0, const RuntimeMethod* method);
 // UnityEngine.Component UnityEngine.Component::GetComponent(System.Type)
 extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * Component_GetComponent_m886226392 (Component_t1923634451 * __this, Type_t * ___type0, const RuntimeMethod* method);
+// UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
+extern "C" IL2CPP_METHOD_ATTR Component_t1923634451 * GameObject_GetComponent_m1027872079 (GameObject_t1113636619 * __this, Type_t * ___type0, const RuntimeMethod* method);
 // UnityEngine.ScriptableObject UnityEngine.ScriptableObject::CreateInstance(System.Type)
 extern "C" IL2CPP_METHOD_ATTR ScriptableObject_t2528358522 * ScriptableObject_CreateInstance_m2611081756 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method);
 // System.Void System.ArgumentNullException::.ctor(System.String)
@@ -4635,6 +4658,31 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeO
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
 		Component_t1923634451 * L_2 = Component_GetComponent_m886226392((Component_t1923634451 *)__this, (Type_t *)L_1, /*hidden argument*/NULL);
+		V_0 = (RuntimeObject *)((RuntimeObject *)Castclass((RuntimeObject*)L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
+		goto IL_001c;
+	}
+
+IL_001c:
+	{
+		RuntimeObject * L_3 = V_0;
+		return L_3;
+	}
+}
+// T UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * GameObject_GetComponent_TisRuntimeObject_m3920941149_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GameObject_GetComponent_TisRuntimeObject_m3920941149_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject * V_0 = NULL;
+	{
+		RuntimeTypeHandle_t3027515415  L_0 = { reinterpret_cast<intptr_t> (IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)) };
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m1620074514(NULL /*static, unused*/, (RuntimeTypeHandle_t3027515415 )L_0, /*hidden argument*/NULL);
+		Component_t1923634451 * L_2 = GameObject_GetComponent_m1027872079((GameObject_t1113636619 *)__this, (Type_t *)L_1, /*hidden argument*/NULL);
 		V_0 = (RuntimeObject *)((RuntimeObject *)Castclass((RuntimeObject*)L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
 		goto IL_001c;
 	}
