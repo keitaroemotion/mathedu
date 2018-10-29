@@ -22,12 +22,12 @@ public class ObjectController : MonoBehaviour {
             g.transform.Rotate(0, 0, dx);    
         }
 
-        if (Input.GetKey(KeyCode.RightArrow)){
-            g.transform.Rotate(0, 0, -1);    
-        }
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            g.transform.Rotate(0, 0, 1);    
-        }
+        //if (Input.GetKey(KeyCode.RightArrow)){
+        //    g.transform.Rotate(0, 0, -1);    
+        //}
+        //if (Input.GetKey(KeyCode.LeftArrow)){
+        //    g.transform.Rotate(0, 0, 1);    
+        //}
     }
 
     public void RotateY(GameObject g, float dy){

@@ -8,6 +8,9 @@ public class Shape : MonoBehaviour {
     private int   objectIndex;
     private float delta;
     private float VELOCITY = 0.1f;
+    private KeyCode SwapCommandL = KeyCode.LeftArrow;
+    private KeyCode SwapCommandR = KeyCode.RightArrow;
+
 
     private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule"};
 
@@ -27,9 +30,6 @@ public class Shape : MonoBehaviour {
         delta       = 0;
         objectIndex = 0;
     }
-
-    private KeyCode SwapCommandL = KeyCode.L;
-    private KeyCode SwapCommandR = KeyCode.R;
 
     bool SwapEventTriggered(KeyCode keycode){
         if(Input.GetKey(keycode) && delta > 0.25f){
@@ -57,8 +57,8 @@ public class Shape : MonoBehaviour {
 
     void SwitchObjects(){
 	IncreaseDelta();
-    	Move(1 , objects.Count, 0,                 KeyCode.L);
-	Move(-1, -1           , objects.Count - 1, KeyCode.R);
+    	Move(1 , objects.Count, 0,                 SwapCommandL);
+	Move(-1, -1           , objects.Count - 1, SwapCommandR);
     }
 
     void ShowLog(){
@@ -97,14 +97,11 @@ public class Shape : MonoBehaviour {
 
 	var positions = SetPositions(objectIndex, GetPositions());
 
-	// targetObject.transform.position = GetPositions()[objectIndex];
 	for(var i = 0; i < objects.Count; i++){
-            var obj = GetTargetObjectWithIndex(i);
-	    //obj.transform.position = positions[i];
+            var obj                = GetTargetObjectWithIndex(i);
 	    obj.transform.position = Vector3.MoveTowards(obj.transform.position, positions[i], VELOCITY);
 	}
 
         GetObjectController().Rotate(targetObject);
-	//targetObject.transform.position = Vector3.MoveTowards(targetObject.transform.position, targetPosition, VELOCITY);
     }
 }
