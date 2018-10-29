@@ -16,7 +16,7 @@ public class ObjectController : MonoBehaviour {
         this.x = pos.x;              
         this.y = pos.y;
     }
-  
+
     public void RotateX(GameObject g, float dx){
         if(System.Math.Abs(dx) > DELTA_MINIMUM && Input.GetMouseButton(0)){
             g.transform.Rotate(0, 0, dx);    

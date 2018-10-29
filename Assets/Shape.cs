@@ -46,8 +46,10 @@ public class Shape : MonoBehaviour {
             if(objectIndex == comparisonTarget){
                 objectIndex = assignmentTarget;
             }
-
+            
             delta = 0;
+
+            FixRotations();
         }
     }    
 
@@ -67,6 +69,14 @@ public class Shape : MonoBehaviour {
 
     GameObject GetTargetObject(){
         return GetTargetObjectWithIndex(objectIndex);
+    }
+
+    List<GameObject> GetAllObjects(){
+	var gs = new List<GameObject>();    
+	foreach(var tag in objects){
+           gs.Add(GameObject.Find(tag));
+	}
+	return gs;
     }
 
     GameObject GetTargetObjectWithIndex(int i){
@@ -89,9 +99,20 @@ public class Shape : MonoBehaviour {
 	return latter;
     }
 
+    void FixRotations()
+    {
+        GetAllObjects().ForEach( g => FixRotation(g) );
+    }
+
+    void FixRotation(GameObject obj)
+    {
+	obj.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+    }
+
     void Update () {
 
 	SwitchObjects();
+
         ShowLog();
         var targetObject = GetTargetObject();
 
