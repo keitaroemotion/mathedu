@@ -39,7 +39,7 @@ public class Shape : MonoBehaviour {
     void Start(){
         delta       = 0;
         objectIndex = 0;
-	particle = GameObject.Find("Particle").GetComponent<ParticleSystem>();
+	particle = GameObject.Find("Ring").GetComponent<ParticleSystem>();
     }
 
     bool SwapEventTriggered(KeyCode keycode){
