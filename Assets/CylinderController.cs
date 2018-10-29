@@ -8,7 +8,7 @@ public class CylinderController : MonoBehaviour {
     private int   objectIndex;
     private float delta;
 
-    private List<string> objects = new List<string>{"Cylinder", "Cube"};
+    private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule"};
 
     ObjectController GetObjectController(){
         return GameObject.Find("Object").GetComponent<ObjectController>();
