@@ -35,7 +35,6 @@ public class Shape : MonoBehaviour {
         if(Input.GetKey(keycode) && delta > 0.25f){
 	    return true;
 	}
-
 	return false;
     }
 
@@ -72,11 +71,7 @@ public class Shape : MonoBehaviour {
     }
 
     List<GameObject> GetAllObjects(){
-	var gs = new List<GameObject>();    
-	foreach(var tag in objects){
-           gs.Add(GameObject.Find(tag));
-	}
-	return gs;
+        return ToList(objects.Select(g => GameObject.Find(g)));
     }
 
     GameObject GetTargetObjectWithIndex(int i){
@@ -99,30 +94,32 @@ public class Shape : MonoBehaviour {
 	return latter;
     }
 
-    void FixRotations()
-    {
+    List<GameObject> ToList(IEnumerable<GameObject> ienums){
+        var list = new List<GameObject>();	    
+	foreach(var l in ienums){ list.Add(l); }
+	return list;
+    }
+
+    void FixRotations(){
         GetAllObjects().ForEach( g => FixRotation(g) );
     }
 
-    void FixRotation(GameObject obj)
-    {
+    void FixRotation(GameObject obj){
 	obj.transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 
-    void Update () {
-
-	SwitchObjects();
-
-        ShowLog();
-        var targetObject = GetTargetObject();
-
+    void ResetPositions(){
 	var positions = SetPositions(objectIndex, GetPositions());
-
-	for(var i = 0; i < objects.Count; i++){
+ 	for(var i = 0; i < objects.Count; i++){
             var obj                = GetTargetObjectWithIndex(i);
 	    obj.transform.position = Vector3.MoveTowards(obj.transform.position, positions[i], VELOCITY);
 	}
+    }
 
-        GetObjectController().Rotate(targetObject);
+    void Update () {
+	SwitchObjects();
+        ShowLog();
+        ResetPositions();
+        GetObjectController().Rotate(GetTargetObject());
     }
 }
