@@ -11,23 +11,24 @@ public class Shape : MonoBehaviour {
     private KeyCode SwapCommandL = KeyCode.LeftArrow;
     private KeyCode SwapCommandR = KeyCode.RightArrow;
 
-
-    private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule"};
+    private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule", "CylinderShort"};
 
     // Remained tasks: 
     //
     // 1. let object be more beautiful (might gotta be imported from Maya + Arnold)
     // 2. Android 
     // 3. Add effects when moving or selected
+    // 4. zoom/not
 
     // Defined Positions of each object ... might need mathematical
     // calculation to make it in a good git
-    private Vector3 POSITION_2   = new Vector3(-1.4f, 0.0f, -5.7f);
-    private Vector3 POSITION_1   = new Vector3(0.52f, 0.79f, -7.7f);
-    private Vector3 POSITION_3   = new Vector3(4.0f, 0.0f, -5.7f);
+    private Vector3 POSITION_1 = new Vector3(0.52f, 0.79f, -7.7f);
+    private Vector3 POSITION_2 = new Vector3(-1.4f, 0.0f, -5.7f);
+    private Vector3 POSITION_3 = new Vector3(4.0f, 0.0f, -5.7f);
+    private Vector3 POSITION_4 = new Vector3(6.0f, 0.0f, -5.7f);
 
     private List<Vector3> GetPositions(){
-        return new List<Vector3>{POSITION_1, POSITION_2, POSITION_3};
+        return new List<Vector3>{POSITION_1, POSITION_2, POSITION_3, POSITION_4};
     }
 
     ObjectController GetObjectController(){
