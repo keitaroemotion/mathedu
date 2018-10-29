@@ -22,43 +22,34 @@ public class Shape : MonoBehaviour {
     private KeyCode SwapCommandL = KeyCode.L;
     private KeyCode SwapCommandR = KeyCode.R;
 
-    bool SwapEventTriggeredR(){
-        if(Input.GetKey(KeyCode.R) && delta > 0.25f){
+    bool SwapEventTriggered(KeyCode keycode){
+        if(Input.GetKey(keycode) && delta > 0.25f){
 	    return true;
 	}
 
 	return false;
     }
 
-    bool SwapEventTriggeredL(){
-        if(Input.GetKey(KeyCode.L) && delta > 0.25f){
-	    return true;
-	}
+    void Move(int increment, int comparisonTarget, int assignmentTarget, KeyCode keycode){
+       if(SwapEventTriggered(keycode)){
+            objectIndex += increment;                            
 
-	return false;
+            if(objectIndex == comparisonTarget){
+                objectIndex = assignmentTarget;
+            }
+
+            delta = 0;
+        }
+    }    
+
+    void IncreaseDelta(){
+        delta += Time.deltaTime;
     }
 
     void Update () {
-        delta += Time.deltaTime;
-        if(SwapEventTriggeredL()){
-            objectIndex += 1;                            
-
-            if(objectIndex == objects.Count){
-                objectIndex = 0;
-            }
-
-            delta = 0;
-        }
-
-        if(SwapEventTriggeredR()){
-            objectIndex -= 1;                            
-
-            if(objectIndex == -1){
-                objectIndex = objects.Count-1;
-            }
-
-            delta = 0;
-        }
+	IncreaseDelta();
+	Move(1 , objects.Count, 0,                 KeyCode.L);
+	Move(-1, -1           , objects.Count - 1, KeyCode.R);
 
         Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", objectIndex, objects.Count, delta));
         GetObjectController().Rotate(GameObject.Find(objects[objectIndex]));
