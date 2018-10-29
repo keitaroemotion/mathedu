@@ -46,12 +46,19 @@ public class Shape : MonoBehaviour {
         delta += Time.deltaTime;
     }
 
-    void Update () {
+    void SwitchObjects(){
 	IncreaseDelta();
-	Move(1 , objects.Count, 0,                 KeyCode.L);
+    	Move(1 , objects.Count, 0,                 KeyCode.L);
 	Move(-1, -1           , objects.Count - 1, KeyCode.R);
+    }
 
+    void ShowLog(){
         Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", objectIndex, objects.Count, delta));
+    }
+
+    void Update () {
+	SwitchObjects();
+        ShowLog();
         GetObjectController().Rotate(GameObject.Find(objects[objectIndex]));
     }
 }
