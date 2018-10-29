@@ -19,8 +19,19 @@ public class Shape : MonoBehaviour {
         objectIndex = 0;
     }
 
-    bool SwapEventTriggered(){
-        if(Input.GetKey(KeyCode.X) && delta > 0.25f){
+    private KeyCode SwapCommandL = KeyCode.L;
+    private KeyCode SwapCommandR = KeyCode.R;
+
+    bool SwapEventTriggeredR(){
+        if(Input.GetKey(KeyCode.R) && delta > 0.25f){
+	    return true;
+	}
+
+	return false;
+    }
+
+    bool SwapEventTriggeredL(){
+        if(Input.GetKey(KeyCode.L) && delta > 0.25f){
 	    return true;
 	}
 
@@ -29,11 +40,21 @@ public class Shape : MonoBehaviour {
 
     void Update () {
         delta += Time.deltaTime;
-        if(SwapEventTriggered()){
+        if(SwapEventTriggeredL()){
             objectIndex += 1;                            
 
             if(objectIndex == objects.Count){
                 objectIndex = 0;
+            }
+
+            delta = 0;
+        }
+
+        if(SwapEventTriggeredR()){
+            objectIndex -= 1;                            
+
+            if(objectIndex == -1){
+                objectIndex = objects.Count-1;
             }
 
             delta = 0;
