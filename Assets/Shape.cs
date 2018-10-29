@@ -10,6 +10,7 @@ public class Shape : MonoBehaviour {
     private float VELOCITY = 0.1f;
     private KeyCode SwapCommandL = KeyCode.LeftArrow;
     private KeyCode SwapCommandR = KeyCode.RightArrow;
+    private ParticleSystem particle;
 
     private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule", "CylinderShort"};
 
@@ -38,6 +39,7 @@ public class Shape : MonoBehaviour {
     void Start(){
         delta       = 0;
         objectIndex = 0;
+	particle = GameObject.Find("Particle").GetComponent<ParticleSystem>();
     }
 
     bool SwapEventTriggered(KeyCode keycode){
@@ -57,6 +59,8 @@ public class Shape : MonoBehaviour {
             
             delta = 0;
 
+	    particle.transform.position = POSITION_1;
+	    particle.Play();
             FixRotations();
         }
     }    
