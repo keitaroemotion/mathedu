@@ -12,7 +12,7 @@ public class Shape : MonoBehaviour {
     private KeyCode SwapCommandR = KeyCode.RightArrow;
     private ParticleSystem particle;
 
-    private List<string> objects = new List<string>{"Cylinder", "Cube", "Capsule", "CylinderShort"};
+    private List<string> objects = new List<string>{"Cylinder", "Cube", "Rippo", "CylinderShort"};
 
     // Remained tasks: 
     //
@@ -39,14 +39,14 @@ public class Shape : MonoBehaviour {
     void Start(){
         delta       = 0;
         objectIndex = 0;
-	particle = GameObject.Find("Ring").GetComponent<ParticleSystem>();
+        //particle = GameObject.Find("Ring").GetComponent<ParticleSystem>();
     }
 
     bool SwapEventTriggered(KeyCode keycode){
         if(Input.GetKey(keycode) && delta > 0.25f){
-	    return true;
-	}
-	return false;
+            return true;
+        }
+        return false;
     }
 
     void Move(int increment, int comparisonTarget, int assignmentTarget, KeyCode keycode){
@@ -59,8 +59,8 @@ public class Shape : MonoBehaviour {
             
             delta = 0;
 
-	    particle.transform.position = POSITION_1;
-	    particle.Play();
+            //particle.transform.position = POSITION_1;
+            //particle.Play();
             FixRotations();
         }
     }    
@@ -70,13 +70,13 @@ public class Shape : MonoBehaviour {
     }
 
     void SwitchObjects(){
-	IncreaseDelta();
-    	Move(1 , objects.Count, 0,                 SwapCommandL);
-	Move(-1, -1           , objects.Count - 1, SwapCommandR);
+        IncreaseDelta();
+        Move(1 , objects.Count, 0,                 SwapCommandL);
+        Move(-1, -1           , objects.Count - 1, SwapCommandR);
     }
 
     void ShowLog(){
-        Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", objectIndex, objects.Count, delta));
+        //Debug.Log(string.Format("index: {0} cnt: {1} delta: {2}", objectIndex, objects.Count, delta));
     }
 
     GameObject GetTargetObject(){
@@ -92,25 +92,25 @@ public class Shape : MonoBehaviour {
     }
 
     List<Vector3> SubList(List<Vector3> v, int start, int end){
-	var newList = new List<Vector3>();    
+        var newList = new List<Vector3>();    
         for(int i = start; i <= end;  i++)  {
-           newList.Add(v[i]);	
-	}
-	return newList;
+               newList.Add(v[i]);    
+        }
+        return newList;
     }
      
     List<Vector3> SetPositions(int i, List<Vector3> v){
-	var N      = v.Count;    
-	var former = SubList(v, 0,     N - (i + 1));
-	var latter = SubList(v, N - i, N - 1);
-	latter.AddRange(former);
-	return latter;
+        var N      = v.Count;    
+        var former = SubList(v, 0,     N - (i + 1));
+        var latter = SubList(v, N - i, N - 1);
+       latter.AddRange(former);
+       return latter;
     }
 
     List<GameObject> ToList(IEnumerable<GameObject> ienums){
-        var list = new List<GameObject>();	    
-	foreach(var l in ienums){ list.Add(l); }
-	return list;
+        var list = new List<GameObject>();        
+        foreach(var l in ienums){ list.Add(l); }
+        return list;
     }
 
     void FixRotations(){
@@ -118,19 +118,20 @@ public class Shape : MonoBehaviour {
     }
 
     void FixRotation(GameObject obj){
-	obj.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+	    Debug.Log("xxx");		
+        obj.transform.eulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     void ResetPositions(){
-	var positions = SetPositions(objectIndex, GetPositions());
- 	for(var i = 0; i < objects.Count; i++){
+        var positions = SetPositions(objectIndex, GetPositions());
+        for(var i = 0; i < objects.Count; i++){
             var obj                = GetTargetObjectWithIndex(i);
-	    obj.transform.position = Vector3.MoveTowards(obj.transform.position, positions[i], VELOCITY);
-	}
+            obj.transform.position = Vector3.MoveTowards(obj.transform.position, positions[i], VELOCITY);
+        }
     }
 
     void Update () {
-	SwitchObjects();
+        SwitchObjects();
         ShowLog();
         ResetPositions();
         GetObjectController().Rotate(GetTargetObject());
